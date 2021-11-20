@@ -1,0 +1,13 @@
+// Boostrap
+@import "~bootstrap/scss/bootstrap";
+
+// Import Main SASS
+@import 'main/home.scss';
+
+// Import Base Theme
+@import 'base/_variables.scss';
+
+// Import Templaye Part
+@import 'template-part/header.scss';
+@import 'template-part/hero.scss';
+
