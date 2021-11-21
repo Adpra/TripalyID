@@ -1,6 +1,6 @@
 .main-hero {
     height: 850px;
-    background-color: #f8fafc;
+    background-color: $body-bg;
     margin-top: -98px;
     background-repeat: no-repeat, no-repeat;
     background-position: right 280px bottom 50px, right top;
@@ -9,9 +9,13 @@
     .hero-detail {
         position: absolute;
         bottom: 180px;
+        margin-left: 30px;
         h3 {
             font-size: 56px;
+            font-family: $second-font-family;
+            font-weight: 700;
             span {
+                
                 color: $color-primary-blue;
             }
         }
@@ -20,6 +24,7 @@
             white-space: pre-line;
             line-height: 1.5;
             margin: 30px 0;
+            font-family: $font-family;
         }
     }
     .hero-button {
@@ -35,6 +40,7 @@
             border: 1px solid $color-primary-black;
             box-shadow: 0 5px 20px -7px $color-primary-black;
             transition: 0.3s;
+            font-family: $second-font-family;
             &:hover {
                 background-color: $color-primary-blue;
                 font-size: 26px;
@@ -51,6 +57,7 @@
             font-weight: 700;
             box-shadow: 0 5px 20px -7px $color-primary-black;
             transition: 0.3s;
+            font-family: $second-font-family;
             &:hover {
                 background-color: $color-primary-blue;
                 color: $color-primary-white;

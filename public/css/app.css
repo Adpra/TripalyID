@@ -11343,7 +11343,7 @@ header .main-logo {
 
 .main-hero {
   height: 850px;
-  background-color: #f8fafc;
+  background-color: #ffffff;
   margin-top: -98px;
   background-repeat: no-repeat, no-repeat;
   background-position: right 280px bottom 50px, right top;
@@ -11353,9 +11353,12 @@ header .main-logo {
 .main-hero .hero-detail {
   position: absolute;
   bottom: 180px;
+  margin-left: 30px;
 }
 .main-hero .hero-detail h3, .main-hero .hero-detail .h3 {
   font-size: 56px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
 }
 .main-hero .hero-detail h3 span, .main-hero .hero-detail .h3 span {
   color: #0d56dd;
@@ -11365,6 +11368,7 @@ header .main-logo {
   white-space: pre-line;
   line-height: 1.5;
   margin: 30px 0;
+  font-family: "Nunito", sans-serif;
 }
 .main-hero .hero-button {
   display: flex;
@@ -11380,6 +11384,7 @@ header .main-logo {
   border: 1px solid #000F2C;
   box-shadow: 0 5px 20px -7px #000F2C;
   transition: 0.3s;
+  font-family: "Quicksand", sans-serif;
 }
 .main-hero .hero-button .button-left:hover {
   background-color: #0d56dd;
@@ -11396,10 +11401,162 @@ header .main-logo {
   font-weight: 700;
   box-shadow: 0 5px 20px -7px #000F2C;
   transition: 0.3s;
+  font-family: "Quicksand", sans-serif;
 }
 .main-hero .hero-button .button-right:hover {
   background-color: #0d56dd;
   color: #f8fafc;
   font-size: 26px;
+}
+
+.triplay-intro {
+  text-align: center;
+  margin-top: 50px;
+}
+.triplay-intro h2, .triplay-intro .h2 {
+  font-size: 48px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+.triplay-intro h2 span, .triplay-intro .h2 span {
+  color: #0d56dd;
+}
+.triplay-intro p {
+  font-size: 20px;
+  line-height: 1.3;
+  font-family: "Nunito", sans-serif;
+  white-space: pre-line;
+  margin: 30px 0 50px 0;
+}
+.triplay-intro .icon-intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.triplay-intro .icon-intro h4, .triplay-intro .icon-intro .h4 {
+  margin: 0 25px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.5;
+  display: inline-flex;
+}
+.triplay-intro .icon-intro h4 .icon-intro__ic, .triplay-intro .icon-intro .h4 .icon-intro__ic {
+  background-color: #000F2C;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  position: relative;
+  margin-right: 5px;
+}
+.triplay-intro .icon-intro h4 .icon-intro__ic img, .triplay-intro .icon-intro .h4 .icon-intro__ic img {
+  margin: 0;
+  position: absolute;
+  -ms-transform: translateY(-50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.triplay-banner {
+  margin-top: 100px;
+}
+.triplay-banner .banner-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.triplay-banner .double-banner {
+  display: flex;
+  flex-direction: row;
+  text-align: -webkit-center;
+}
+.triplay-banner .double-banner .slick-banner {
+  margin: 15px;
+}
+.triplay-banner .double-banner .slick-slide {
+  margin: 10px -70px;
+}
+.triplay-banner .double-banner .slick-list {
+  margin: 0 70px;
+}
+
+.triplay-game-list {
+  margin-top: 100px;
+}
+.triplay-game-list .heading-game {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.triplay-game-list .heading-game h3, .triplay-game-list .heading-game .h3 {
+  font-size: 48px;
+  line-height: 1.3;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+}
+.triplay-game-list .heading-game h3 span, .triplay-game-list .heading-game .h3 span {
+  color: #0d56dd;
+}
+.triplay-game-list .heading-game p {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  white-space: pre-line;
+}
+.triplay-game-list .game-list__wrapper {
+  padding: 0 80px;
+}
+.triplay-game-list .game-list__wrapper .card-game {
+  margin-bottom: 70px;
+  position: relative;
+}
+.triplay-game-list .game-list__wrapper .card-game img {
+  min-width: 100%;
+  transition: 0.5s;
+}
+.triplay-game-list .game-list__wrapper .card-game .button-shop {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  padding: 10px 40px;
+  background-color: #FF8A00;
+  text-decoration: none;
+  color: #f8fafc;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  border-radius: 20px;
+  display: none;
+}
+.triplay-game-list .game-list__wrapper .card-game .game-name {
+  height: 60px;
+  background-color: #000F2C;
+  color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 30px 30px;
+  transition: 0.5s;
+}
+.triplay-game-list .game-list__wrapper .card-game .game-name h2, .triplay-game-list .game-list__wrapper .card-game .game-name .h2 {
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.3;
+  font-weight: 700;
+}
+.triplay-game-list .game-list__wrapper .card-game:hover .button-shop {
+  display: block;
+}
+.triplay-game-list .game-list__wrapper .card-game:hover > img {
+  webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+.triplay-game-list .game-list__wrapper .card-game:hover .game-name {
+  background-color: #FF8A00;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 10px 10px -1px #000F2C;
+}
+.triplay-game-list .game-list__wrapper .card-game:hover .game-name h2, .triplay-game-list .game-list__wrapper .card-game:hover .game-name .h2 {
+  font-size: 23px;
+  transition: 0.5s;
 }
 

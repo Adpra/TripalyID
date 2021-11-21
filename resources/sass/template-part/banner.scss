@@ -1,0 +1,23 @@
+.triplay-banner {
+    margin-top: 100px;
+    .banner-wrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .double-banner {
+        display: flex;
+        flex-direction: row;
+        text-align: -webkit-center;
+        .slick-banner {
+            margin: 15px;
+        }
+        .slick-slide {
+            margin: 10px -70px;
+        }
+        .slick-list {
+            margin: 0 70px;
+        }
+    }
+
+}
