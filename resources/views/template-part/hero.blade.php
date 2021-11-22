@@ -1,4 +1,4 @@
-<div class="main-hero" style="background-image:url({{ asset('img/botak.png') }}) , url({{ asset('img/ellipse.png') }});">
+<section class="main-hero" style="background-image:url({{ asset('img/botak.png') }}) , url({{ asset('img/ellipse.png') }});">
     <div class="container">
         <div class="hero-detail">
             <h3>Beli Diamond <span>Game</span> <br>Yang <span>Kamu Suka</span></h3>
@@ -10,4 +10,4 @@
                 </div>
         </div>
     </div>
-</div>
+</section>

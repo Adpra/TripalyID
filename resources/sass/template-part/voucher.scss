@@ -1,0 +1,78 @@
+.triplay-voucher-list {
+    margin-top: 100px;
+    .heading-voucher {
+        text-align: center;
+        margin-bottom: 50px;
+        h3 {
+            font-size: 48px;
+            line-height: 1.3;
+            font-family: $second-font-family;
+            font-weight: 900;
+            span {
+                color: $color-primary-blue;
+            }
+        }
+        p {
+            font-size: 20px;
+            font-family: $font-family;
+            white-space: pre-line;
+        }
+    }
+    .voucher-list__wrapper {
+        padding: 0 80px;
+        .card-voucher {
+            margin-bottom: 70px;
+            position: relative;
+            img {
+                min-width: 100%;
+                transition: .5s;
+            }
+            .button-shop {
+                position: absolute;
+                top: 50%; right: 50%;
+                transform: translate(50%,-50%);
+                padding: 10px 40px;
+                background-color: $button-color;
+                text-decoration: none;
+                color: $color-primary-white;
+                font-family: $second-font-family;
+                font-weight: 700;
+                border-radius: 20px;
+                display: none;
+            }
+            .voucher-name {
+                height: 60px;
+                background-color: $color-primary-black;
+                color: $color-primary-white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0 0 30px 30px;
+                transition: .5s;
+                h2 {
+                    font-size: 20px;
+                    font-family: $second-font-family;
+                    line-height: 1.3;
+                    font-weight: 700;
+                }
+            }
+            &:hover .button-shop {
+                display: block;
+            }
+            &:hover > img {
+                webkit-filter: blur(2px);
+                filter: blur(2px);
+            }
+            &:hover .voucher-name {
+                background-color: $button-color;
+                border-radius: 0 0 50px 50px;
+                box-shadow: 0 10px 10px -1px $color-primary-black;
+                h2 {
+                    font-size: 23px;
+                    transition: .5s;
+                }
+            }
+        }
+       
+    }
+}

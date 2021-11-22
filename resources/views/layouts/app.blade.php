@@ -16,9 +16,6 @@
   </head>
   <body>  
     @yield('content')
-    <br>
-    <br>
-    <br><br><br><br><br><br><br>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

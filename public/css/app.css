@@ -11388,7 +11388,7 @@ header .main-logo {
 }
 .main-hero .hero-button .button-left:hover {
   background-color: #0d56dd;
-  font-size: 26px;
+  box-shadow: 0 20px 20px -7px #0d56dd;
 }
 .main-hero .hero-button .button-right {
   font-size: 25px;
@@ -11406,7 +11406,7 @@ header .main-logo {
 .main-hero .hero-button .button-right:hover {
   background-color: #0d56dd;
   color: #f8fafc;
-  font-size: 26px;
+  box-shadow: 0 20px 20px -7px #0d56dd;
 }
 
 .triplay-intro {
@@ -11558,5 +11558,206 @@ header .main-logo {
 .triplay-game-list .game-list__wrapper .card-game:hover .game-name h2, .triplay-game-list .game-list__wrapper .card-game:hover .game-name .h2 {
   font-size: 23px;
   transition: 0.5s;
+}
+
+.triplay-voucher-list {
+  margin-top: 100px;
+}
+.triplay-voucher-list .heading-voucher {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.triplay-voucher-list .heading-voucher h3, .triplay-voucher-list .heading-voucher .h3 {
+  font-size: 48px;
+  line-height: 1.3;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+}
+.triplay-voucher-list .heading-voucher h3 span, .triplay-voucher-list .heading-voucher .h3 span {
+  color: #0d56dd;
+}
+.triplay-voucher-list .heading-voucher p {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  white-space: pre-line;
+}
+.triplay-voucher-list .voucher-list__wrapper {
+  padding: 0 80px;
+}
+.triplay-voucher-list .voucher-list__wrapper .card-voucher {
+  margin-bottom: 70px;
+  position: relative;
+}
+.triplay-voucher-list .voucher-list__wrapper .card-voucher img {
+  min-width: 100%;
+  transition: 0.5s;
+}
+.triplay-voucher-list .voucher-list__wrapper .card-voucher .button-shop {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  padding: 10px 40px;
+  background-color: #FF8A00;
+  text-decoration: none;
+  color: #f8fafc;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  border-radius: 20px;
+  display: none;
+}
+.triplay-voucher-list .voucher-list__wrapper .card-voucher .voucher-name {
+  height: 60px;
+  background-color: #000F2C;
+  color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 30px 30px;
+  transition: 0.5s;
+}
+.triplay-voucher-list .voucher-list__wrapper .card-voucher .voucher-name h2, .triplay-voucher-list .voucher-list__wrapper .card-voucher .voucher-name .h2 {
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.3;
+  font-weight: 700;
+}
+.triplay-voucher-list .voucher-list__wrapper .card-voucher:hover .button-shop {
+  display: block;
+}
+.triplay-voucher-list .voucher-list__wrapper .card-voucher:hover > img {
+  webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+.triplay-voucher-list .voucher-list__wrapper .card-voucher:hover .voucher-name {
+  background-color: #FF8A00;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 10px 10px -1px #000F2C;
+}
+.triplay-voucher-list .voucher-list__wrapper .card-voucher:hover .voucher-name h2, .triplay-voucher-list .voucher-list__wrapper .card-voucher:hover .voucher-name .h2 {
+  font-size: 23px;
+  transition: 0.5s;
+}
+
+.triplay-tutorial {
+  margin-top: 50px;
+}
+.triplay-tutorial .heading-tutorial {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.triplay-tutorial .heading-tutorial h3, .triplay-tutorial .heading-tutorial .h3 {
+  font-size: 48px;
+  line-height: 1.3;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+}
+.triplay-tutorial .heading-tutorial h3 span, .triplay-tutorial .heading-tutorial .h3 span {
+  color: #0d56dd;
+}
+.triplay-tutorial .heading-tutorial p {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  white-space: pre-line;
+}
+.triplay-tutorial .video-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 0 55px;
+}
+.triplay-tutorial .video-wrapper .embed-video-wrapper {
+  margin: 0 auto;
+}
+.triplay-tutorial .video-wrapper .embed-video-wrapper iframe {
+  border-radius: 30px;
+}
+
+footer.triplay-footer {
+  background-color: #000F2C;
+  margin-top: 100px;
+}
+footer.triplay-footer .triplay-company {
+  display: flex;
+  flex-direction: row;
+  padding: 0 60px;
+  padding-top: 62px;
+}
+footer.triplay-footer .triplay-company .column-company {
+  margin-right: 200px;
+}
+footer.triplay-footer .triplay-company .column-company h4, footer.triplay-footer .triplay-company .column-company .h4 {
+  color: #f8fafc;
+  font-size: 48px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+footer.triplay-footer .triplay-company .column-company ul {
+  display: flex;
+  flex-direction: column;
+}
+footer.triplay-footer .triplay-company .column-company ul li {
+  list-style: none;
+  color: #f8fafc;
+  margin-left: -28px;
+}
+footer.triplay-footer .triplay-company .column-company ul li a {
+  text-decoration: none;
+  color: #f8fafc;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+footer.triplay-footer .triplay-company .column-company ul li a:hover {
+  color: #058ae2;
+}
+footer.triplay-footer .triplay-contact {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 80px;
+}
+footer.triplay-footer .triplay-contact .contact-detail h4, footer.triplay-footer .triplay-contact .contact-detail .h4 {
+  font-size: 48px;
+  color: #f8fafc;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+}
+footer.triplay-footer .triplay-contact .contact-detail h4 span, footer.triplay-footer .triplay-contact .contact-detail .h4 span {
+  color: #0d56dd;
+}
+footer.triplay-footer .triplay-contact .contact-detail p {
+  color: #f8fafc;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+footer.triplay-footer .triplay-contact .contact-detail .sosicon-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer.triplay-footer .triplay-contact .contact-detail .sosicon-wrapper .sosicon {
+  margin: 10px;
+}
+footer.triplay-footer .triplay-contact .contact-detail.right {
+  display: flex;
+  flex-direction: column-reverse;
+}
+footer.triplay-footer .footer-line {
+  opacity: 1 !important;
+  color: #f8fafc;
+  width: 89%;
+  margin: 0 auto;
+}
+footer.triplay-footer .credit-footer {
+  padding: 0 70px;
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+footer.triplay-footer .credit-footer p {
+  color: #f8fafc;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: "Nunito", sans-serif;
 }
 

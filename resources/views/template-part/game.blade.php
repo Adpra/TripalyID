@@ -1,4 +1,4 @@
-<div class="triplay-game-list">
+<section class="triplay-game-list">
     <div class="container">
         <div class="heading-game">
             <h3>Top Up <span>Game</span></h3>
@@ -48,27 +48,6 @@
                     <h2>PUBG</h2>
                 </div>
             </div>
-            <div class="card-game col-lg-4">
-                <img src="{{ asset('img/pubg.jpg') }}" alt="PUBG">
-                <a class="button-shop" href="#">BELI</a>
-                <div class="game-name">
-                    <h2>PUBG</h2>
-                </div>
-            </div>
-            <div class="card-game col-lg-4">
-                <img src="{{ asset('img/pubg.jpg') }}" alt="PUBG">
-                <a class="button-shop" href="#">BELI</a>
-                <div class="game-name">
-                    <h2>PUBG</h2>
-                </div>
-            </div>
-            <div class="card-game col-lg-4">
-                <img src="{{ asset('img/pubg.jpg') }}" alt="PUBG">
-                <a class="button-shop" href="#">BELI</a>
-                <div class="game-name">
-                    <h2>PUBG</h2>
-                </div>
-            </div>
         </div>
     </div>
-</div>
+</section>

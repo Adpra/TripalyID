@@ -1,4 +1,4 @@
-<div class="triplay-banner">
+<section class="triplay-banner">
     <div class="container">
         <div class="banner-wrapper">
             <div class="single-banner">
@@ -20,4 +20,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>

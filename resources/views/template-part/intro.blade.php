@@ -1,4 +1,4 @@
-<div class="triplay-intro">
+<section class="triplay-intro">
     <div class="container">
         <h2>Mengapa Harus <span>Beli Di Kami?</span></h2>
         <p>Bisa membeli diamond dimanapun dan kapan pun
@@ -9,4 +9,4 @@
                 <h4><div class="icon-intro__ic"><img src="{{ asset('img/ic-dollar.svg') }}"></div> Banyak Promo</h4>
             </div>
     </div>
-</div>
+</section>

@@ -43,7 +43,7 @@
             font-family: $second-font-family;
             &:hover {
                 background-color: $color-primary-blue;
-                font-size: 26px;
+                box-shadow: 0 20px 20px -7px $color-primary-blue;
             }
         }
         .button-right {
@@ -61,7 +61,7 @@
             &:hover {
                 background-color: $color-primary-blue;
                 color: $color-primary-white;
-                font-size: 26px;
+                box-shadow: 0 20px 20px -7px $color-primary-blue;
             }
         }
     }
