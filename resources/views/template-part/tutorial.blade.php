@@ -6,10 +6,10 @@
                 silahkan nonton video dibawah ini</p>
         </div>
         <div class="video-wrapper">
-            <div class="embed-video-wrapper">
+            <div class="embed-video-wrapper" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/rKQMt1WvFR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="embed-video-wrapper">
+            <div class="embed-video-wrapper" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3848FDQGkE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>

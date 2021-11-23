@@ -1,6 +1,9 @@
 // Boostrap
 @import "~bootstrap/scss/bootstrap";
 
+// aos
+@import "~aos/dist/aos.css";
+
 // Import Main SASS
 @import 'main/home.scss';
 
@@ -16,4 +19,5 @@
 @import 'template-part/voucher.scss';
 @import 'template-part/tutorial.scss';
 @import 'template-part/footer.scss';
+
 
