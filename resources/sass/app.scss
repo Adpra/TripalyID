@@ -1,7 +1,7 @@
 // Boostrap
 @import "~bootstrap/scss/bootstrap";
 
-// aos
+// AOS
 @import "~aos/dist/aos.css";
 
 // Import Main SASS
@@ -9,15 +9,20 @@
 
 // Import Base Theme
 @import 'base/_variables.scss';
+@import 'main/header.scss';
+@import 'main/second-header.scss';
+@import 'main/footer.scss';
 
 // Import Template Part
-@import 'template-part/header.scss';
 @import 'template-part/hero.scss';
 @import 'template-part/intro.scss';
 @import 'template-part/banner.scss';
 @import 'template-part/game.scss';
 @import 'template-part/voucher.scss';
 @import 'template-part/tutorial.scss';
-@import 'template-part/footer.scss';
+
+// Import Checkout Part
+@import 'checkout-part/description.scss';
+
 
 

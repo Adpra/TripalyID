@@ -1,0 +1,67 @@
+.triplay-second-header {
+    height: 98px;
+    position: relative;
+    z-index: 99;
+    background-color: $color-primary-black;
+    .triplay-navbar__home {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        position: relative;
+        .list-nav {
+            margin: 36px 100px 0 0;
+            font-size: 20px;
+            line-height: 1.1;
+            font-weight: 700;
+            letter-spacing: 1;
+            font-family: $font-family;
+            z-index: 100;
+            .white-arrow {
+                margin-left: 10px;
+                transform: rotate(-90deg);
+            }
+            &:hover + .dropdown-nav {
+                display: block;
+            }
+            &:hover .white-arrow {
+                transform: rotate(0deg);
+            }
+        }
+        .dropdown-nav {
+            position: absolute;
+            top: 50px;
+            left: 150px;
+            list-style: none;
+            text-align: center;
+            display: none;
+            background-color: $color-primary-black;
+            .list-dropdown {
+                margin: 30px 0;
+                font-size: 20px;
+                line-height: 1.1;
+                padding-right: 30px;
+            }
+            &:hover {
+                display: block;
+            }
+        }
+        .dropdown-second {
+            position: absolute;
+            top: 50px;
+            left: 360px;
+            list-style: none;
+            text-align: center;
+            display: none;
+        }
+         a {
+
+             text-decoration: none;
+             color: $color-primary-white;
+         }
+    }
+    .main-logo {
+        position: absolute;
+        right: 300px;
+        top: 15px;
+    }
+}

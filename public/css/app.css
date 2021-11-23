@@ -11342,6 +11342,165 @@ header .main-logo {
   top: 15px;
 }
 
+.triplay-second-header {
+  height: 98px;
+  position: relative;
+  z-index: 99;
+  background-color: #000F2C;
+}
+.triplay-second-header .triplay-navbar__home {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  position: relative;
+}
+.triplay-second-header .triplay-navbar__home .list-nav {
+  margin: 36px 100px 0 0;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: 1;
+  font-family: "Nunito", sans-serif;
+  z-index: 100;
+}
+.triplay-second-header .triplay-navbar__home .list-nav .white-arrow {
+  margin-left: 10px;
+  transform: rotate(-90deg);
+}
+.triplay-second-header .triplay-navbar__home .list-nav:hover + .dropdown-nav {
+  display: block;
+}
+.triplay-second-header .triplay-navbar__home .list-nav:hover .white-arrow {
+  transform: rotate(0deg);
+}
+.triplay-second-header .triplay-navbar__home .dropdown-nav {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  list-style: none;
+  text-align: center;
+  display: none;
+  background-color: #000F2C;
+}
+.triplay-second-header .triplay-navbar__home .dropdown-nav .list-dropdown {
+  margin: 30px 0;
+  font-size: 20px;
+  line-height: 1.1;
+  padding-right: 30px;
+}
+.triplay-second-header .triplay-navbar__home .dropdown-nav:hover {
+  display: block;
+}
+.triplay-second-header .triplay-navbar__home .dropdown-second {
+  position: absolute;
+  top: 50px;
+  left: 360px;
+  list-style: none;
+  text-align: center;
+  display: none;
+}
+.triplay-second-header .triplay-navbar__home a {
+  text-decoration: none;
+  color: #f8fafc;
+}
+.triplay-second-header .main-logo {
+  position: absolute;
+  right: 300px;
+  top: 15px;
+}
+
+footer.triplay-footer {
+  background-color: #000F2C;
+  margin-top: 100px;
+}
+footer.triplay-footer .triplay-company {
+  display: flex;
+  flex-direction: row;
+  padding: 0 60px;
+  padding-top: 62px;
+}
+footer.triplay-footer .triplay-company .column-company {
+  margin-right: 200px;
+}
+footer.triplay-footer .triplay-company .column-company h4, footer.triplay-footer .triplay-company .column-company .h4 {
+  color: #f8fafc;
+  font-size: 48px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+footer.triplay-footer .triplay-company .column-company ul {
+  display: flex;
+  flex-direction: column;
+}
+footer.triplay-footer .triplay-company .column-company ul li {
+  list-style: none;
+  color: #f8fafc;
+  margin-left: -28px;
+}
+footer.triplay-footer .triplay-company .column-company ul li a {
+  text-decoration: none;
+  color: #f8fafc;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+footer.triplay-footer .triplay-company .column-company ul li a:hover {
+  color: #058ae2;
+}
+footer.triplay-footer .triplay-contact {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 80px;
+}
+footer.triplay-footer .triplay-contact .contact-detail h4, footer.triplay-footer .triplay-contact .contact-detail .h4 {
+  font-size: 48px;
+  color: #f8fafc;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+}
+footer.triplay-footer .triplay-contact .contact-detail h4 span, footer.triplay-footer .triplay-contact .contact-detail .h4 span {
+  color: #0d56dd;
+}
+footer.triplay-footer .triplay-contact .contact-detail p {
+  color: #f8fafc;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+footer.triplay-footer .triplay-contact .contact-detail .sosicon-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer.triplay-footer .triplay-contact .contact-detail .sosicon-wrapper a:hover {
+  margin-bottom: 5px;
+}
+footer.triplay-footer .triplay-contact .contact-detail .sosicon-wrapper .sosicon {
+  margin: 10px;
+}
+footer.triplay-footer .triplay-contact .contact-detail.right {
+  display: flex;
+  flex-direction: column-reverse;
+}
+footer.triplay-footer .footer-line {
+  opacity: 1 !important;
+  color: #f8fafc;
+  width: 89%;
+  margin: 0 auto;
+}
+footer.triplay-footer .credit-footer {
+  padding: 0 70px;
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+footer.triplay-footer .credit-footer p {
+  color: #f8fafc;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: "Nunito", sans-serif;
+}
+
 .main-hero {
   height: 850px;
   background-color: #ffffff;
@@ -11673,95 +11832,31 @@ header .main-logo {
   border-radius: 30px;
 }
 
-footer.triplay-footer {
-  background-color: #000F2C;
-  margin-top: 100px;
+.triplay-checkout-description {
+  margin: 100px 0;
 }
-footer.triplay-footer .triplay-company {
-  display: flex;
-  flex-direction: row;
-  padding: 0 60px;
-  padding-top: 62px;
+.triplay-checkout-description .checkout-banner-wrapper {
+  padding: 0 30px;
 }
-footer.triplay-footer .triplay-company .column-company {
-  margin-right: 200px;
+.triplay-checkout-description .checkout-detail {
+  padding: 0 30px;
 }
-footer.triplay-footer .triplay-company .column-company h4, footer.triplay-footer .triplay-company .column-company .h4 {
-  color: #f8fafc;
+.triplay-checkout-description .checkout-detail h2, .triplay-checkout-description .checkout-detail .h2 {
   font-size: 48px;
   font-family: "Quicksand", sans-serif;
-  font-weight: 700;
+  margin: 30px 0;
+  font-weight: 900;
 }
-footer.triplay-footer .triplay-company .column-company ul {
-  display: flex;
-  flex-direction: column;
-}
-footer.triplay-footer .triplay-company .column-company ul li {
-  list-style: none;
-  color: #f8fafc;
-  margin-left: -28px;
-}
-footer.triplay-footer .triplay-company .column-company ul li a {
-  text-decoration: none;
-  color: #f8fafc;
-  font-family: "Nunito", sans-serif;
-  font-size: 20px;
-}
-footer.triplay-footer .triplay-company .column-company ul li a:hover {
-  color: #058ae2;
-}
-footer.triplay-footer .triplay-contact {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px 80px;
-}
-footer.triplay-footer .triplay-contact .contact-detail h4, footer.triplay-footer .triplay-contact .contact-detail .h4 {
-  font-size: 48px;
-  color: #f8fafc;
-  font-family: "Nunito", sans-serif;
-  font-weight: 700;
-  line-height: 1.3;
-}
-footer.triplay-footer .triplay-contact .contact-detail h4 span, footer.triplay-footer .triplay-contact .contact-detail .h4 span {
+.triplay-checkout-description .checkout-detail h2 span, .triplay-checkout-description .checkout-detail .h2 span {
   color: #0d56dd;
 }
-footer.triplay-footer .triplay-contact .contact-detail p {
-  color: #f8fafc;
-  font-family: "Quicksand", sans-serif;
+.triplay-checkout-description .checkout-detail p {
   font-size: 20px;
-}
-footer.triplay-footer .triplay-contact .contact-detail .sosicon-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-footer.triplay-footer .triplay-contact .contact-detail .sosicon-wrapper a:hover {
-  margin-bottom: 5px;
-}
-footer.triplay-footer .triplay-contact .contact-detail .sosicon-wrapper .sosicon {
-  margin: 10px;
-}
-footer.triplay-footer .triplay-contact .contact-detail.right {
-  display: flex;
-  flex-direction: column-reverse;
-}
-footer.triplay-footer .footer-line {
-  opacity: 1 !important;
-  color: #f8fafc;
-  width: 89%;
-  margin: 0 auto;
-}
-footer.triplay-footer .credit-footer {
-  padding: 0 70px;
-  margin-top: 20px;
-  padding-bottom: 50px;
-}
-footer.triplay-footer .credit-footer p {
-  color: #f8fafc;
-  font-size: 20px;
-  line-height: 1.5;
   font-family: "Nunito", sans-serif;
+  line-height: 1.3;
+  white-space: pre-line;
+}
+.triplay-checkout-description .checkout-detail p a {
+  text-decoration: none;
 }
 
