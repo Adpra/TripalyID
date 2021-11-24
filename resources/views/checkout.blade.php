@@ -9,4 +9,11 @@
 
 @section('content')
 @include('checkout-part.description')
+@include('checkout-part.item-option')
+@include('checkout-part.payment-option')
+@include('checkout-part.auto-payment-form')
+@endsection
+
+@section('footer')
+    @include('layouts.footer')
 @endsection

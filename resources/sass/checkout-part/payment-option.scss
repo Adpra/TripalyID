@@ -1,0 +1,136 @@
+.triplay-payment {
+    margin: 50px 0;
+    a {
+        color: $color-primary-black;
+    }
+    h3 {
+        font-size: 48px;
+        line-height: 1.3;
+        font-weight: 700;
+        font-family: $font-family;
+        text-align: center;
+        span {
+            color: $color-primary-blue;
+        }
+    }
+    .auto-payment {
+        display: flex;
+        flex-direction: row;
+        .card-payment {
+            height: 140px;
+            width: 45%;
+            margin: 0 auto;
+            border: 4px solid #000F2C;
+            display: flex;
+            padding: 20px;
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 30px;
+            cursor: pointer;
+            img {
+                max-width: 60%;
+            }
+            .total-price {
+                position: absolute;
+                right: 70px;
+                p , span {
+                    font-size: 20px;
+                    font-family: $second-font-family;
+                    font-weight: 700;
+                }
+                span {
+                    top: -20px;
+                    position: relative;
+                    font-size: 25px;
+                    font-weight: 900;
+                }
+            }
+            .inc-ppn {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                background-color: $color-primary-black;
+                height: 30px;
+                display: none;
+                p {
+                    color: $color-primary-white;
+                    font-family: $second-font-family;
+                    font-size: 15px;
+                    text-align: center;
+                    line-height: 2.2;
+                }
+            }
+            &:hover > .inc-ppn {
+                display: block;
+            }
+        }
+    }
+    .manual-payment {
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        h3 {
+            font-size: 48px;
+            line-height: 1.3;
+            font-weight: 700;
+            font-family: $font-family;
+            text-align: center;
+            span {
+                color: $color-primary-blue;
+            }
+        }
+        .card-payment.manual {
+            height: 140px;
+            width: 45%;
+            margin: 0 auto;
+            border: 4px solid #000F2C;
+            display: flex;
+            padding: 20px;
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 30px;
+            cursor: pointer;
+            img {
+                max-width: 60%;
+            }
+            .total-price {
+                position: absolute;
+                right: 70px;
+                p , span {
+                    font-size: 20px;
+                    font-family: $second-font-family;
+                    font-weight: 700;
+                }
+                span {
+                    top: -20px;
+                    position: relative;
+                    font-size: 25px;
+                    font-weight: 900;
+                }
+            }
+            .inc-ppn {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                background-color: $color-primary-black;
+                height: 30px;
+                display: none;
+                p {
+                    color: $color-primary-white;
+                    font-family: $second-font-family;
+                    font-size: 15px;
+                    text-align: center;
+                    line-height: 2.2;
+                }
+            }
+            &:hover > .inc-ppn {
+                display: block;
+            }
+        }
+    }
+}

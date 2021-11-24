@@ -1,7 +1,10 @@
 .triplay-checkout-description {
-    margin: 100px 0;
+    margin: 60px 0;
     .checkout-banner-wrapper {
         padding: 0 30px;
+        img {
+            min-width: 100%;
+        }
     }
     .checkout-detail {
         padding: 0 30px;
