@@ -14,7 +14,7 @@ class TriplayController extends Controller
      */
     public function index()
     {
-        //
+        return view('content-admin-part/adminTriplay/index');
     }
 
     /**
@@ -24,7 +24,7 @@ class TriplayController extends Controller
      */
     public function create()
     {
-        //
+        return view('content-admin-part/adminTriplay/table');
     }
 
     /**

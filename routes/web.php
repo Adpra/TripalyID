@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\TriplayController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('/checkout' , [CheckoutController::class , 'index']);
+Route::get('/admin' , [TriplayController::class , 'index']);
+Route::get('/admin/table' , [TriplayController::class , 'create']);
