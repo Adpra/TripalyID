@@ -7,6 +7,9 @@
 // Import Main SASS
 @import 'main/home.scss';
 
+// Import AOS
+@import "~aos/dist/aos.css";
+
 // Import Base Theme
 @import 'base/_variables.scss';
 @import 'main/header.scss';
