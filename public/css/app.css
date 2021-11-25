@@ -11711,15 +11711,6 @@ footer.triplay-footer .credit-footer p {
   webkit-filter: blur(2px);
   filter: blur(2px);
 }
-.triplay-game-list .game-list__wrapper .card-game:hover .game-name {
-  background-color: #FF8A00;
-  border-radius: 0 0 50px 50px;
-  box-shadow: 0 10px 10px -1px #000F2C;
-}
-.triplay-game-list .game-list__wrapper .card-game:hover .game-name h2, .triplay-game-list .game-list__wrapper .card-game:hover .game-name .h2 {
-  font-size: 23px;
-  transition: 0.5s;
-}
 
 .triplay-voucher-list {
   margin-top: 100px;
@@ -11789,15 +11780,6 @@ footer.triplay-footer .credit-footer p {
 .triplay-voucher-list .voucher-list__wrapper .card-voucher:hover > img {
   webkit-filter: blur(2px);
   filter: blur(2px);
-}
-.triplay-voucher-list .voucher-list__wrapper .card-voucher:hover .voucher-name {
-  background-color: #FF8A00;
-  border-radius: 0 0 50px 50px;
-  box-shadow: 0 10px 10px -1px #000F2C;
-}
-.triplay-voucher-list .voucher-list__wrapper .card-voucher:hover .voucher-name h2, .triplay-voucher-list .voucher-list__wrapper .card-voucher:hover .voucher-name .h2 {
-  font-size: 23px;
-  transition: 0.5s;
 }
 
 .triplay-tutorial {
@@ -11991,7 +11973,7 @@ footer.triplay-footer .credit-footer p {
 .triplay-payment .manual-payment h3 span, .triplay-payment .manual-payment .h3 span {
   color: #0d56dd;
 }
-.triplay-payment .manual-payment .card-payment.manual {
+.triplay-payment .manual-payment .card-payment.manual-direct {
   height: 140px;
   width: 45%;
   margin: 0 auto;
@@ -12004,25 +11986,25 @@ footer.triplay-footer .credit-footer p {
   margin-top: 30px;
   cursor: pointer;
 }
-.triplay-payment .manual-payment .card-payment.manual img {
+.triplay-payment .manual-payment .card-payment.manual-direct img {
   max-width: 60%;
 }
-.triplay-payment .manual-payment .card-payment.manual .total-price {
+.triplay-payment .manual-payment .card-payment.manual-direct .total-price {
   position: absolute;
   right: 70px;
 }
-.triplay-payment .manual-payment .card-payment.manual .total-price p, .triplay-payment .manual-payment .card-payment.manual .total-price span {
+.triplay-payment .manual-payment .card-payment.manual-direct .total-price p, .triplay-payment .manual-payment .card-payment.manual-direct .total-price span {
   font-size: 20px;
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
 }
-.triplay-payment .manual-payment .card-payment.manual .total-price span {
+.triplay-payment .manual-payment .card-payment.manual-direct .total-price span {
   top: -20px;
   position: relative;
   font-size: 25px;
   font-weight: 900;
 }
-.triplay-payment .manual-payment .card-payment.manual .inc-ppn {
+.triplay-payment .manual-payment .card-payment.manual-direct .inc-ppn {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -12031,14 +12013,181 @@ footer.triplay-footer .credit-footer p {
   height: 30px;
   display: none;
 }
-.triplay-payment .manual-payment .card-payment.manual .inc-ppn p {
+.triplay-payment .manual-payment .card-payment.manual-direct .inc-ppn p {
   color: #f8fafc;
   font-family: "Quicksand", sans-serif;
   font-size: 15px;
   text-align: center;
   line-height: 2.2;
 }
-.triplay-payment .manual-payment .card-payment.manual:hover > .inc-ppn {
+.triplay-payment .manual-payment .card-payment.manual-direct:hover > .inc-ppn {
   display: block;
+}
+
+.triplay-auto-payment {
+  margin: 60px 0;
+  display: none;
+}
+.triplay-auto-payment h3, .triplay-auto-payment .h3 {
+  font-size: 48px;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-weight: 900;
+  margin: 30px 0;
+}
+.triplay-auto-payment h3 span, .triplay-auto-payment .h3 span {
+  color: #0d56dd;
+}
+.triplay-auto-payment .centered-line {
+  padding: 0 30px;
+}
+.triplay-auto-payment .centered-line .form-wrapper {
+  background-color: #000F2C;
+  padding: 100px 0;
+  border-radius: 30px;
+}
+.triplay-auto-payment .centered-line .form-wrapper p {
+  color: #f8fafc;
+  white-space: pre-line;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.3;
+  font-family: "Nunito", sans-serif;
+}
+.triplay-auto-payment .centered-line .form-wrapper form {
+  display: flex;
+  flex-direction: column;
+}
+.triplay-auto-payment .centered-line .form-wrapper form input {
+  margin: 20px auto;
+  width: 45%;
+  background-color: transparent;
+  height: 60px;
+  border: 2px solid #f8fafc;
+  color: #f8fafc;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 50px;
+}
+.triplay-auto-payment .centered-line .form-wrapper form input::-moz-placeholder {
+  color: #f8fafc;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+.triplay-auto-payment .centered-line .form-wrapper form input:-ms-input-placeholder {
+  color: #f8fafc;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+.triplay-auto-payment .centered-line .form-wrapper form input::placeholder {
+  color: #f8fafc;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+.triplay-auto-payment .centered-line .form-wrapper form #pay {
+  background-color: #f8fafc;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 150px;
+  border-radius: 30px;
+  height: 55px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.triplay-auto-payment .centered-line .form-wrapper form #pay:hover {
+  background-color: #FF8A00;
+  color: #f8fafc;
+}
+
+.triplay-manual-payment {
+  margin: 60px 0;
+  display: block;
+  display: none;
+}
+.triplay-manual-payment h3, .triplay-manual-payment .h3 {
+  font-size: 48px;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-weight: 900;
+  margin: 30px 0;
+}
+.triplay-manual-payment h3 span, .triplay-manual-payment .h3 span {
+  color: #0d56dd;
+}
+.triplay-manual-payment .centered-line {
+  padding: 0 30px;
+}
+.triplay-manual-payment .centered-line .form-wrapper {
+  background-color: #000F2C;
+  padding: 100px 0;
+  border-radius: 30px;
+}
+.triplay-manual-payment .centered-line .form-wrapper p {
+  color: #f8fafc;
+  white-space: pre-line;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.3;
+  font-family: "Nunito", sans-serif;
+}
+.triplay-manual-payment .centered-line .form-wrapper form {
+  display: flex;
+  flex-direction: column;
+}
+.triplay-manual-payment .centered-line .form-wrapper form input {
+  margin: 20px auto;
+  width: 45%;
+  background-color: transparent;
+  height: 60px;
+  border: 2px solid #f8fafc;
+  color: #f8fafc;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 50px;
+}
+.triplay-manual-payment .centered-line .form-wrapper form input::-moz-placeholder {
+  color: #f8fafc;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+.triplay-manual-payment .centered-line .form-wrapper form input:-ms-input-placeholder {
+  color: #f8fafc;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+.triplay-manual-payment .centered-line .form-wrapper form input::placeholder {
+  color: #f8fafc;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+.triplay-manual-payment .centered-line .form-wrapper form select {
+  width: 45%;
+  margin: 20px auto;
+  height: 60px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  font-size: 20px;
+  padding: 0 50px;
+  font-weight: 700;
+}
+.triplay-manual-payment .centered-line .form-wrapper form select option {
+  background-color: #000F2C;
+}
+.triplay-manual-payment .centered-line .form-wrapper form #pay {
+  background-color: #f8fafc;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 150px;
+  border-radius: 30px;
+  height: 55px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.triplay-manual-payment .centered-line .form-wrapper form #pay:hover {
+  background-color: #FF8A00;
+  color: #f8fafc;
 }
 

@@ -12,6 +12,7 @@
 @include('checkout-part.item-option')
 @include('checkout-part.payment-option')
 @include('checkout-part.auto-payment-form')
+@include('checkout-part.manual-payment-form')
 @endsection
 
 @section('footer')

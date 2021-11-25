@@ -1,4 +1,4 @@
-<section class="triplay-auto-payment" id="triplay-auto-payment">
+<section class="triplay-manual-payment" id="triplay-manual-payment">
     <div class="container">
         <div class="centered-line">
             <h3>Masukkan <span>ID</span></h3>
@@ -12,6 +12,13 @@
                     <input type="text" id="game_id" name="game_id" placeholder="ID Game">
                     <input type="text" id="nickname" name="nickname" placeholder="Nickname">
                     <input type="text" id="number" name="number" placeholder="Nomor Whatsapp">
+                    <select name="payment" id="payment">
+                        <option value="">BCA</option>
+                        <option value="">GOPAY</option>
+                        <option value="">ALFAMART</option>
+                        <option value="">INDOMARET</option>
+                        <option value="">MANDIRI</option>
+                    </select>
                     <button type="submit" name="pay" id="pay">Pay</button>
                 </form>
             </div>

@@ -5221,6 +5221,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./custom */ "./resources/js/custom.js");
 
+__webpack_require__(/*! ./eventHandler */ "./resources/js/eventHandler.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -5271,6 +5273,50 @@ $('.autoplay').slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 1500
+});
+
+/***/ }),
+
+/***/ "./resources/js/eventHandler.js":
+/*!**************************************!*\
+  !*** ./resources/js/eventHandler.js ***!
+  \**************************************/
+/***/ (() => {
+
+var autoPayment = document.getElementsByClassName('triplay-auto-payment')[0].style;
+var paymentWrapper = document.getElementsByClassName('triplay-manual-payment')[0].style;
+var bca = document.getElementsByClassName('bca-payment')[0].addEventListener('click', function () {
+  autoPayment.display = "none";
+
+  if (autoPayment.display === "block") {
+    autoPayment.display = "none";
+  } else {
+    autoPayment.display = "block";
+  }
+
+  paymentWrapper.display = "none";
+  window.location.href = "#triplay-auto-payment";
+});
+var gopay = document.getElementsByClassName('gopay-payment')[0].addEventListener('click', function () {
+  autoPayment.display = "none";
+
+  if (autoPayment.display === "block") {
+    autoPayment.display = "none";
+  } else {
+    autoPayment.display = "block";
+  }
+
+  paymentWrapper.display = "none";
+  window.location.href = "#triplay-auto-payment";
+});
+var manualPayment = document.getElementsByClassName('manual-direct')[0].addEventListener('click', function () {
+  if (paymentWrapper.display == "block") {
+    paymentWrapper.display = "none";
+  } else {
+    paymentWrapper.display = "block";
+  }
+
+  autoPayment.display = "none";
 });
 
 /***/ }),

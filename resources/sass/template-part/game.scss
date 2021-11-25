@@ -63,15 +63,6 @@
                 webkit-filter: blur(2px);
                 filter: blur(2px);
             }
-            &:hover .game-name {
-                background-color: $button-color;
-                border-radius: 0 0 50px 50px;
-                box-shadow: 0 10px 10px -1px $color-primary-black;
-                h2 {
-                    font-size: 23px;
-                    transition: .5s;
-                }
-            } 
         }
        
     }
