@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Triplay;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class TriplayController extends Controller
 {
@@ -14,7 +15,8 @@ class TriplayController extends Controller
      */
     public function index()
     {
-        return view('content-admin-part/adminTriplay/index');
+        $triplays = triplay::all();
+        return view('content-admin-part/adminTriplay/index',compact('triplays'));
     }
 
     /**
@@ -24,7 +26,7 @@ class TriplayController extends Controller
      */
     public function create()
     {
-        return view('content-admin-part/adminTriplay/table');
+        return view('content-admin-part/adminTriplay/tambah');
     }
 
     /**
@@ -35,7 +37,45 @@ class TriplayController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // $request->validate([
+        //     'nama' => 'required',
+        //     'deskripsi' => 'required',
+        //     'resource' => 'required',
+        //     'multiplayer' => 'required',
+        //     'action' => 'required',
+        //     'gambar' => 'mimes:jpg,png,jpeg'
+        // ]);
+
+
+        if($request->file('image')){
+            $image= $request -> file('image')->store('image', 'public');
+
+        }else{
+            $image=null;
+
+        };
+
+        if($request->file('imageCheckout')){
+            $imageCheckout= $request -> file('imageCheckout')->store('image', 'public');
+
+        }else{
+            $image=null;
+
+        };
+
+
+
+        Triplay::insert([
+            // 'price_id' => $request->get('price_id'),
+            'nama' => $request->get('nama'),
+            'deskripsi' => $request->get('deskripsi'),
+            'image' => $image,
+            'imageCheckout' => $imageCheckout
+            ]);
+
+
+
+        return redirect('/admin')->with('status', 'Data Berhasil Di Tambahkan');
     }
 
     /**
@@ -57,7 +97,7 @@ class TriplayController extends Controller
      */
     public function edit(Triplay $triplay)
     {
-        //
+        return view('content-admin-part/adminTriplay/edit', compact('triplay'));
     }
 
     /**
@@ -69,7 +109,49 @@ class TriplayController extends Controller
      */
     public function update(Request $request, Triplay $triplay)
     {
-        //
+        // $request->validate([
+        //     'nama' => 'required',
+        //     'deskripsi' => 'required',
+        //     'resource' => 'required',
+        //     'multiplayer' => 'required',
+        //     'action' => 'required',
+        //     'gambar' => 'mimes:jpg,png,jpeg'
+        // ]);
+
+
+            if($request->file('image')){
+                $image= $request->file('image')->store('images', 'public');
+                $data = Triplay::findOrfail($triplay->id);
+                if($data->image){
+                Storage::delete('public/'. $data->image);
+                    $data->image = $image;
+                }else{
+                    $data->image = $image;
+                }
+                $data->save();
+            };
+            if($request->file('imageCheckout')){
+                $imageCheckout= $request->file('imageCheckout')->store('images', 'public');
+                $data = Triplay::findOrfail($triplay->id);
+                if($data->imageCheckout){
+                Storage::delete('public/'. $data->imageCheckout);
+                    $data->imageCheckout = $imageCheckout;
+                }else{
+                    $data->imageCheckout = $imageCheckout;
+                }
+                $data->save();
+            };
+
+
+        Triplay::where('id', $triplay->id)
+         ->update([
+            // 'price_id' => $request->price_id,
+             'nama' => $request->nama,
+             'deskripsi' => $request->deskripsi,
+         ]);
+
+//
+         return redirect('/admin')->with('status', 'Data Berhasil Di Di Ubah');
     }
 
     /**
@@ -80,6 +162,8 @@ class TriplayController extends Controller
      */
     public function destroy(Triplay $triplay)
     {
-        //
+        Triplay::destroy($triplay->id);
+
+        return redirect('/admin')->with('status', 'Data Berhasil Di Dihapus');
     }
 }

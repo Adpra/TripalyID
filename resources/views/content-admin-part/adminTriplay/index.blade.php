@@ -1,64 +1,39 @@
 @extends('adminLTE')
 
 @section('content-admin')
-    <div class="row">
-        <div class="col-lg-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">No</th>
+        <th scope="col">Nama</th>
+        <th scope="col" style="width:10rem;">Image</th>
+        <th scope="col" style="width:10rem;">Image Checkout</th>
+        <th scope="col">Deskripsi</th>
+        <th scope="col">Aksi</th>
+      </tr>
+    </thead>
+    <tbody>
+        @foreach ($triplays as $triplay)
+        <tr>
+          <th scope="row">{{$loop->iteration}}</th>
+          <td>{{$triplay->nama}}</td>
+          <td><img src="/storage/{{$triplay->image}}" alt="" class="img-fluid" ></td>
+          <td><img src="/storage/{{$triplay->imageCheckout}}" alt="" class="img-fluid" ></td>
+          <td>{{$triplay->deskripsi}}</td>
+          <td >
+            <a href="/admin/{{$triplay->id}}/edit" class="btn btn-success d-inline btn-sm  my-3" >Edit</a>
+            <form action="/admin/{{$triplay -> id}}" method="post"  class="d-inline">
+                @method('delete')
+                @csrf
+            <button class="btn btn-danger btn-sm  my-3" type="submit">Delete</button>
+        </form>
+        </td>
+        </tr>
+        @endforeach
 
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's
-                content.
-              </p>
+    </tbody>
+  </table>
 
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div>
-
-          <div class="card card-primary card-outline">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's
-                content.
-              </p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div><!-- /.card -->
-        </div>
-        <!-- /.col-md-6 -->
-        <div class="col-lg-6">
-          <div class="card">
-            <div class="card-header">
-              <h5 class="m-0">Featured</h5>
-            </div>
-            <div class="card-body">
-              <h6 class="card-title">Special title treatment</h6>
-
-              <p class="card-text">anirrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-
-          <div class="card card-primary card-outline">
-            <div class="card-header">
-              <h5 class="m-0">Featured</h5>
-            </div>
-            <div class="card-body">
-              <h6 class="card-title">Special title treatment</h6>
-
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <!-- /.col-md-6 -->
-      </div>
-      <!-- /.row -->
 @endsection
 
 

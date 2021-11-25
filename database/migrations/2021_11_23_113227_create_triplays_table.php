@@ -19,7 +19,6 @@ class CreateTriplaysTable extends Migration
             $table->string('deskripsi');
             $table->string('image');
             $table->string('imageCheckout');
-            $table->string('video');
             $table->timestamps();
         });
     }

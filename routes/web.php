@@ -21,4 +21,8 @@ Route::get('/', function () {
 
 Route::get('/checkout' , [CheckoutController::class , 'index']);
 Route::get('/admin' , [TriplayController::class , 'index']);
-Route::get('/admin/table' , [TriplayController::class , 'create']);
+Route::get('/admin/tambah' , [TriplayController::class , 'create']);
+Route::post('/admin/tambah/data' , [TriplayController::class , 'store']);
+Route::get('/admin/{triplay}/edit' , [TriplayController::class , 'edit']);
+Route::patch('/admin/{triplay}' , [TriplayController::class , 'update']);
+Route::delete('/admin/{triplay}' , [TriplayController::class , 'destroy']);

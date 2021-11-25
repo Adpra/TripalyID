@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Triplay extends Model
 {
-    use HasFactory;
+    protected $fillable =['id','nama','deskripsi','image','imageCheckout'];
 }
