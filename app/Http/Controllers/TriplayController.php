@@ -51,7 +51,7 @@ class TriplayController extends Controller
         }else{
             $image=null;
         };
-        
+
         Triplay::insert([
             'name' => $request->get('name'),
             'slug' => Str::slug($request->name),
