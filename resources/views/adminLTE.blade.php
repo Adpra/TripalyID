@@ -2,10 +2,6 @@
 
 @section('title' , 'Admin')
 
-{{--  @section('header')
-@include('adminTriplay-part/header')
-@endsection  --}}
-
 @section('content')
 @include('adminLTE-part/navbar')
 @include('adminLTE-part/sidebar')

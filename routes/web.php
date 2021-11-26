@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\TriplayController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,11 +16,16 @@ use App\Http\Controllers\TriplayController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
 
-Route::get('/checkout' , [CheckoutController::class , 'index']);
+// Home Route
+Route::get('/' , [HomeController::class , 'homeView']);
+
+
+// Checkout Page Route
+Route::get('/checkout/{slug}' , [CheckoutController::class , 'index']);
+
+
+// Admin Page Route
 Route::get('/admin' , [TriplayController::class , 'index']);
 Route::get('/admin/tambah' , [TriplayController::class , 'create']);
 Route::post('/admin/tambah/data' , [TriplayController::class , 'store']);

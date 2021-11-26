@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Triplay extends Model
 {
-    protected $fillable =['id','nama','deskripsi','image','imageCheckout'];
+    protected $fillable =['id','name','slug','description','image','imageCheckout'];
 }

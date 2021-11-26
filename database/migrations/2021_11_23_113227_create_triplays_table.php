@@ -15,8 +15,9 @@ class CreateTriplaysTable extends Migration
     {
         Schema::create('triplays', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
-            $table->string('deskripsi');
+            $table->string('name');
+            $table->string('slug');
+            $table->string('description');
             $table->string('image');
             $table->string('imageCheckout');
             $table->timestamps();

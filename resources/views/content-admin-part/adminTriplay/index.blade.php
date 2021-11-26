@@ -16,13 +16,13 @@
         @foreach ($triplays as $triplay)
         <tr>
           <th scope="row">{{$loop->iteration}}</th>
-          <td>{{$triplay->nama}}</td>
+          <td>{{$triplay->name}}</td>
           <td><img src="/storage/{{$triplay->image}}" alt="" class="img-fluid" ></td>
           <td><img src="/storage/{{$triplay->imageCheckout}}" alt="" class="img-fluid" ></td>
-          <td>{{$triplay->deskripsi}}</td>
+          <td>{{$triplay->description}}</td>
           <td >
             <a href="/admin/{{$triplay->id}}/edit" class="btn btn-success d-inline btn-sm  my-3" >Edit</a>
-            <form action="/admin/{{$triplay -> id}}" method="post"  class="d-inline">
+            <form action="/admin/{{$triplay ->id}}" method="post"  class="d-inline">
                 @method('delete')
                 @csrf
             <button class="btn btn-danger btn-sm  my-3" type="submit">Delete</button>

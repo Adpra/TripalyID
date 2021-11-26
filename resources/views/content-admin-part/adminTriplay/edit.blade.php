@@ -7,11 +7,11 @@
     @csrf
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nama</label>
-        <input type="text" class="form-control" id="nama" placeholder="Nama" name="nama" value="{{$triplay->nama}}"
+        <input type="text" class="form-control" id="nama" placeholder="Nama" name="nama" value="{{$triplay->name}}">
       </div>
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Deskripsi</label>
-        <textarea class="form-control" id="deskripsi" rows="3" name="deskripsi" >{{$triplay->deskripsi}}</textarea>
+        <textarea class="form-control" id="deskripsi" rows="3" name="deskripsi" >{{$triplay->description}}</textarea>
       </div>
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Image</label>

@@ -6,11 +6,11 @@
     @csrf
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nama</label>
-        <input type="text" class="form-control" id="nama" placeholder="Nama" name="nama">
+        <input type="text" class="form-control" id="name" placeholder="Nama" name="name">
       </div>
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Deskripsi</label>
-        <textarea class="form-control" id="deskripsi" rows="3" name="deskripsi"></textarea>
+        <textarea class="form-control" id="description" rows="3" name="description"></textarea>
       </div>
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Image</label>

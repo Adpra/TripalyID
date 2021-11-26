@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Triplay;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class TriplayController extends Controller
 {
@@ -37,22 +38,11 @@ class TriplayController extends Controller
      */
     public function store(Request $request)
     {
-        // $request->validate([
-        //     'nama' => 'required',
-        //     'deskripsi' => 'required',
-        //     'resource' => 'required',
-        //     'multiplayer' => 'required',
-        //     'action' => 'required',
-        //     'gambar' => 'mimes:jpg,png,jpeg'
-        // ]);
-
-
         if($request->file('image')){
             $image= $request -> file('image')->store('image', 'public');
 
         }else{
             $image=null;
-
         };
 
         if($request->file('imageCheckout')){
@@ -60,21 +50,15 @@ class TriplayController extends Controller
 
         }else{
             $image=null;
-
         };
-
-
-
+        
         Triplay::insert([
-            // 'price_id' => $request->get('price_id'),
-            'nama' => $request->get('nama'),
-            'deskripsi' => $request->get('deskripsi'),
+            'name' => $request->get('name'),
+            'slug' => Str::slug($request->name),
+            'description' => $request->get('description'),
             'image' => $image,
             'imageCheckout' => $imageCheckout
             ]);
-
-
-
         return redirect('/admin')->with('status', 'Data Berhasil Di Tambahkan');
     }
 
@@ -109,16 +93,6 @@ class TriplayController extends Controller
      */
     public function update(Request $request, Triplay $triplay)
     {
-        // $request->validate([
-        //     'nama' => 'required',
-        //     'deskripsi' => 'required',
-        //     'resource' => 'required',
-        //     'multiplayer' => 'required',
-        //     'action' => 'required',
-        //     'gambar' => 'mimes:jpg,png,jpeg'
-        // ]);
-
-
             if($request->file('image')){
                 $image= $request->file('image')->store('images', 'public');
                 $data = Triplay::findOrfail($triplay->id);
@@ -145,12 +119,9 @@ class TriplayController extends Controller
 
         Triplay::where('id', $triplay->id)
          ->update([
-            // 'price_id' => $request->price_id,
-             'nama' => $request->nama,
-             'deskripsi' => $request->deskripsi,
+             'name' => $request->name,
+             'description' => $request->description,
          ]);
-
-//
          return redirect('/admin')->with('status', 'Data Berhasil Di Di Ubah');
     }
 
