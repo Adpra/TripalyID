@@ -16,13 +16,13 @@
               </div>
         </div>
         <div class="col">
-            <div class="mb-3">
+            {{--  <div class="mb-3">
                 <label for="voucher" class="form-label">Id_Triplay</label>
                 <input type="text" class="form-control" id="voucher" placeholder="voucher" name="triplay_id">
-              </div>
+              </div>  --}}
             <div class="mb-3">
-                <label for="voucher" class="form-label">Voucher</label>
-                <input type="text" class="form-control" id="voucher" placeholder="voucher" name="voucher">
+                <label for="item" class="form-label">item</label>
+                <input type="text" class="form-control" id="item" placeholder="item" name="item">
               </div>
         </div>
     </div>

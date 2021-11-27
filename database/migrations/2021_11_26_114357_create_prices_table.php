@@ -17,6 +17,7 @@ class CreatePricesTable extends Migration
             $table->id();
             $table->unsignedBigInteger('triplay_id')->nullable();
             $table->string('harga');
+            $table->string('item');
             $table->timestamps();
         });
 

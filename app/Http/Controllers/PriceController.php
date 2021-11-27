@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Price;
 use App\Models\Triplay;
-use App\Models\Voucher;
 use Illuminate\Http\Request;
 
 class PriceController extends Controller
@@ -39,13 +38,11 @@ class PriceController extends Controller
     {
         Price::insert([
             'triplay_id' => $request->get('triplay_id'),
-            'harga' => $request->get('harga')
+            'harga' => $request->get('harga'),
+            'item' => $request->get('item'),
+
             ]);
 
-        Voucher::insert([
-            'triplay_id' => $request->get('triplay_id'),
-            'voucher' => $request->get('voucher')
-            ]);
 
         return redirect('/admin')->with('status', 'Data Berhasil Di Tambahkan');
     }
@@ -88,12 +85,7 @@ class PriceController extends Controller
             'harga' => $request->harga,
         ]);
 
-        Voucher::where('id', $triplay->voucher->id)
-        ->update([
-           // 'nama' => $request->nama,
-           // 'triplay_id'=>$request->triplay_id,
-            'voucher' => $request->voucher,
-        ]);
+
 
     }
 

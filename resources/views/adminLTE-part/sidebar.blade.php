@@ -47,15 +47,21 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="/admin/imageslide" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Harga</p>
+                  <p>Image Slide</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="/admin/imagebanner" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Voucher</p>
+                  <p>Image Banner</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/admin/video" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Video</p>
                 </a>
               </li>
             </ul>
