@@ -89,9 +89,74 @@ footer.triplay-footer {
         padding-bottom: 50px;
         p {
             color: $color-primary-white;
-            font-size: 20px;
+            font-size: 20px; 
             line-height: 1.5;
             font-family: $font-family;
+        }
+    }
+}
+
+// Breakpoint With Max width 
+
+@include media-breakpoint-down(sm) {
+    footer.triplay-footer {
+        margin-top: 50px;
+        .triplay-company {
+            flex-direction: column;
+            padding: 0;
+            padding-top: 50px;
+            .column-company {
+                margin: 0 auto;
+                img {
+                    width: 150px;
+                }
+                h4 {
+                    font-size: 30px;
+                    margin-top: 30px;
+                }
+               ul {
+                   li {
+                       a {
+                           font-size: 15px;
+                       }
+                   }
+               }
+            }
+            .column-company.company {
+                margin-left: 10px !important;
+            }
+        }
+        .triplay-contact {
+            flex-direction: column !important;
+            padding: 0 10px;
+            .contact-detail.left {
+                h4 {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+            .contact-detail.right {
+                .sosicon-wrapper {
+                    justify-content: flex-end;
+                    .sosicon {
+                        margin: 10px 5px;
+                    }
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+        .credit-footer {
+            padding: 0 20px;
+            padding-bottom: 20px;
+            margin-top: 10px;
+            p {
+                font-size: 13px;
+            }
         }
     }
 }

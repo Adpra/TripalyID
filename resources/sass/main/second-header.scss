@@ -2,7 +2,7 @@
     height: 98px;
     position: relative;
     z-index: 99;
-    background-color: $color-primary-black;
+    background-color: $color-primary-black; 
     .triplay-navbar__home {
         display: flex;
         flex-direction: row;
@@ -65,3 +65,51 @@
         top: 15px;
     }
 }
+
+
+@include media-breakpoint-down(sm) { 
+    .triplay-second-header {
+        height: 65px !important;
+        background-color: $color-primary-black;
+        .second-nav {
+            display: none;
+             .container.clearfix {
+                 padding: 0 !important;
+             }
+        }
+    }
+    .black-hamburger {
+        display: block;
+        position: absolute;
+        left: 30px;
+        top: 20px;
+    }
+    .triplay-navbar__home {
+        flex-direction: column !important;
+        top: 65px;
+        padding-bottom: 40px;
+        background-color: $color-primary-black;
+        a {
+            color: $color-primary-white !important;
+            font-size: 15px !important;
+        }
+        .list-nav {
+            margin: 10px;
+            font-size: 15px;
+            span {
+                display: contents !important;
+                margin-left: 10px;
+            }
+        }
+        .dropdown-nav {
+            position: unset !important;
+            text-align: unset !important;
+            margin: 20px 0;
+        }
+    }
+    .main-logo {
+        max-width: 150px;
+        right: 10px !important;
+    }
+  
+ }

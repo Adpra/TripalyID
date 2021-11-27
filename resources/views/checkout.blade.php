@@ -13,6 +13,7 @@
 @include('checkout-part.payment-option')
 @include('checkout-part.auto-payment-form')
 @include('checkout-part.manual-payment-form')
+<script type="text/javascript" src="{{ asset('js/checkout.js') }}"></script>
 @endsection
 
 @section('footer')

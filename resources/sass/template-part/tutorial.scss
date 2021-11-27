@@ -14,7 +14,7 @@
         }
         p {
             font-size: 20px;
-            font-family: $font-family;
+            font-family: $font-family; 
             white-space: pre-line;
         }
     }
@@ -30,3 +30,29 @@
         }
     }
 }
+
+@include media-breakpoint-down(sm) {
+    .triplay-tutorial {
+        margin-top: 30px; 
+            .heading-tutorial {
+
+                h3 {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+            .video-wrapper {
+                padding: 0;
+                .embed-video-wrapper {
+                    padding: 0 5px;
+                    iframe {
+                        border-radius: 10px;
+                        max-width: 100%;
+                        max-height: 100px;
+                    }
+                }
+            }
+        }
+    }

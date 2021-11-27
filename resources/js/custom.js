@@ -4,3 +4,5 @@ $('.autoplay').slick({
     autoplay: true,
     autoplaySpeed: 1500,
 });
+
+

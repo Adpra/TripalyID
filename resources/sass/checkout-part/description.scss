@@ -7,7 +7,7 @@
             max-width: 100%;
             max-height: 262px;
         }
-    }
+    } 
     .checkout-detail {
         padding: 0 30px;
         h2 {
@@ -27,6 +27,25 @@
              a {
                  text-decoration: none;
              }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .triplay-checkout-description {
+        margin: 30px 0;
+        .checkout-banner-wrapper {
+            padding: 0;
+        }
+        .checkout-detail {
+            padding: 0 10px;
+            h2 {
+                font-size: 30px;
+                margin: 20px 0;
+            }
+            p {
+                font-size: 15px;
+            }
         }
     }
 }

@@ -1,4 +1,3 @@
-
 let autoPayment = document.getElementsByClassName('triplay-auto-payment')[0].style;
 let paymentWrapper = document.getElementsByClassName('triplay-manual-payment')[0].style;
 
@@ -33,3 +32,10 @@ const manualPayment = document.getElementsByClassName('manual-direct')[0]
                             }
                             autoPayment.display = "none";
                         });
+
+// Toogle For Mobile Checkout
+let mobileMenu = document.getElementsByClassName('black-hamburger')[0]
+                    .addEventListener('click' , ()=> {
+                        let navbar = document.getElementsByClassName('second-nav')[0].style;
+                        return navbar.display == "block" ? navbar.display = "none" : navbar.display = "block";
+                    });

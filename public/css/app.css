@@ -11283,18 +11283,21 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-header {
+header.main-header {
   height: 98px;
   position: relative;
   z-index: 99;
 }
-header .triplay-navbar__home {
+header.main-header .triplay-navbar__home {
   display: flex;
   flex-direction: row;
   list-style: none;
   position: relative;
 }
-header .triplay-navbar__home .list-nav {
+header.main-header .triplay-navbar__home .black-hamburger {
+  display: none;
+}
+header.main-header .triplay-navbar__home .list-nav {
   margin: 36px 100px 0 0;
   font-size: 20px;
   line-height: 1.1;
@@ -11302,14 +11305,17 @@ header .triplay-navbar__home .list-nav {
   letter-spacing: 1;
   font-family: "Nunito", sans-serif;
 }
-header .triplay-navbar__home .list-nav img {
+header.main-header .triplay-navbar__home .list-nav img {
   margin-left: 10px;
   transform: rotate(-90deg);
 }
-header .triplay-navbar__home .list-nav:hover + .dropdown-nav {
+header.main-header .triplay-navbar__home .list-nav:hover + .dropdown-nav {
   display: block;
 }
-header .triplay-navbar__home .dropdown-nav {
+header.main-header .triplay-navbar__home .list-nav span {
+  display: none;
+}
+header.main-header .triplay-navbar__home .dropdown-nav {
   position: absolute;
   top: 50px;
   left: 150px;
@@ -11317,15 +11323,15 @@ header .triplay-navbar__home .dropdown-nav {
   text-align: center;
   display: none;
 }
-header .triplay-navbar__home .dropdown-nav .list-dropdown {
+header.main-header .triplay-navbar__home .dropdown-nav .list-dropdown {
   margin: 30px 0;
   font-size: 20px;
   line-height: 1.1;
 }
-header .triplay-navbar__home .dropdown-nav:hover {
+header.main-header .triplay-navbar__home .dropdown-nav:hover {
   display: block;
 }
-header .triplay-navbar__home .dropdown-second {
+header.main-header .triplay-navbar__home .dropdown-second {
   position: absolute;
   top: 50px;
   left: 360px;
@@ -11333,16 +11339,64 @@ header .triplay-navbar__home .dropdown-second {
   text-align: center;
   display: none;
 }
-header .triplay-navbar__home a {
+header.main-header .triplay-navbar__home a {
   text-decoration: none;
   color: #000F2C;
 }
-header .main-logo {
+header.main-header .main-logo {
   position: absolute;
   right: 100px;
   top: 15px;
 }
 
+@media (max-width: 575.98px) {
+  header.main-header {
+    height: 65px !important;
+    background-color: #000F2C;
+  }
+  header.main-header .main-nav {
+    display: none;
+  }
+  header.main-header .main-nav .container.clearfix {
+    padding: 0 !important;
+  }
+
+  .black-hamburger {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+  }
+
+  .triplay-navbar__home {
+    flex-direction: column !important;
+    top: 65px;
+    padding-bottom: 40px;
+    background-color: #000F2C;
+  }
+  .triplay-navbar__home a {
+    color: #f8fafc !important;
+    font-size: 15px !important;
+  }
+  .triplay-navbar__home .list-nav {
+    margin: 10px;
+    font-size: 15px;
+  }
+  .triplay-navbar__home .list-nav span {
+    display: contents !important;
+    margin-left: 10px;
+  }
+  .triplay-navbar__home .dropdown-nav {
+    position: unset !important;
+    text-align: unset !important;
+    margin: 20px 0;
+  }
+
+  .main-logo {
+    max-width: 150px;
+    right: 10px !important;
+  }
+}
 .triplay-second-header {
   height: 98px;
   position: relative;
@@ -11410,6 +11464,54 @@ header .main-logo {
   top: 15px;
 }
 
+@media (max-width: 575.98px) {
+  .triplay-second-header {
+    height: 65px !important;
+    background-color: #000F2C;
+  }
+  .triplay-second-header .second-nav {
+    display: none;
+  }
+  .triplay-second-header .second-nav .container.clearfix {
+    padding: 0 !important;
+  }
+
+  .black-hamburger {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+  }
+
+  .triplay-navbar__home {
+    flex-direction: column !important;
+    top: 65px;
+    padding-bottom: 40px;
+    background-color: #000F2C;
+  }
+  .triplay-navbar__home a {
+    color: #f8fafc !important;
+    font-size: 15px !important;
+  }
+  .triplay-navbar__home .list-nav {
+    margin: 10px;
+    font-size: 15px;
+  }
+  .triplay-navbar__home .list-nav span {
+    display: contents !important;
+    margin-left: 10px;
+  }
+  .triplay-navbar__home .dropdown-nav {
+    position: unset !important;
+    text-align: unset !important;
+    margin: 20px 0;
+  }
+
+  .main-logo {
+    max-width: 150px;
+    right: 10px !important;
+  }
+}
 footer.triplay-footer {
   background-color: #000F2C;
   margin-top: 100px;
@@ -11502,6 +11604,60 @@ footer.triplay-footer .credit-footer p {
   font-family: "Nunito", sans-serif;
 }
 
+@media (max-width: 575.98px) {
+  footer.triplay-footer {
+    margin-top: 50px;
+  }
+  footer.triplay-footer .triplay-company {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 50px;
+  }
+  footer.triplay-footer .triplay-company .column-company {
+    margin: 0 auto;
+  }
+  footer.triplay-footer .triplay-company .column-company img {
+    width: 150px;
+  }
+  footer.triplay-footer .triplay-company .column-company h4, footer.triplay-footer .triplay-company .column-company .h4 {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  footer.triplay-footer .triplay-company .column-company ul li a {
+    font-size: 15px;
+  }
+  footer.triplay-footer .triplay-company .column-company.company {
+    margin-left: 10px !important;
+  }
+  footer.triplay-footer .triplay-contact {
+    flex-direction: column !important;
+    padding: 0 10px;
+  }
+  footer.triplay-footer .triplay-contact .contact-detail.left h4, footer.triplay-footer .triplay-contact .contact-detail.left .h4 {
+    font-size: 30px;
+  }
+  footer.triplay-footer .triplay-contact .contact-detail.left p {
+    font-size: 15px;
+  }
+  footer.triplay-footer .triplay-contact .contact-detail.right .sosicon-wrapper {
+    justify-content: flex-end;
+  }
+  footer.triplay-footer .triplay-contact .contact-detail.right .sosicon-wrapper .sosicon {
+    margin: 10px 5px;
+  }
+  footer.triplay-footer .triplay-contact .contact-detail.right .sosicon-wrapper img {
+    width: 30px;
+    height: 30px;
+  }
+  footer.triplay-footer .credit-footer {
+    padding: 0 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+  }
+  footer.triplay-footer .credit-footer p {
+    font-size: 13px;
+  }
+}
 .main-hero {
   height: 850px;
   background-color: #ffffff;
@@ -11569,7 +11725,59 @@ footer.triplay-footer .credit-footer p {
   color: #f8fafc;
   box-shadow: 0 20px 20px -7px #0d56dd;
 }
+.main-hero .hero-mobile {
+  display: none;
+}
 
+@media (max-width: 575.98px) {
+  .main-hero {
+    background-image: none !important;
+    height: 750px;
+  }
+  .main-hero .hero-detail {
+    bottom: unset;
+    top: 200px;
+  }
+  .main-hero .hero-detail h3, .main-hero .hero-detail .h3 {
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .main-hero .hero-detail p {
+    font-size: 15px;
+  }
+  .main-hero .hero-button .button-left {
+    font-size: 15px;
+    padding: 10px 10px;
+    height: 40px;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-right: 20px;
+  }
+  .main-hero .hero-button .button-right {
+    font-size: 15px;
+    padding: 10px 10px;
+    height: 39px;
+    box-shadow: 0 5px 15px -7px #000F2C;
+    line-height: 1;
+    letter-spacing: 1px;
+    border: 2px solid #000F2C;
+    font-weight: 700;
+  }
+  .main-hero .hero-mobile {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: bottom 0 left 0;
+  }
+  .main-hero .hero-mobile img {
+    margin: 0 auto;
+    position: relative;
+    left: 50px;
+    bottom: -30px;
+    width: 75%;
+  }
+}
 .triplay-intro {
   text-align: center;
   margin-top: 50px;
@@ -11619,6 +11827,18 @@ footer.triplay-footer .credit-footer p {
   transform: translate(-50%, -50%);
 }
 
+@media (max-width: 575.98px) {
+  .triplay-intro h2, .triplay-intro .h2 {
+    font-size: 30px;
+  }
+  .triplay-intro p {
+    font-size: 15px;
+    margin: 15px 0;
+  }
+  .triplay-intro .icon-intro {
+    display: none;
+  }
+}
 .triplay-banner {
   margin-top: 100px;
 }
@@ -11626,6 +11846,9 @@ footer.triplay-footer .credit-footer p {
   text-align: center;
   display: flex;
   flex-direction: column;
+}
+.triplay-banner .banner-wrapper .single-banner .freeze-banner {
+  max-width: 100%;
 }
 .triplay-banner .double-banner {
   display: flex;
@@ -11642,6 +11865,28 @@ footer.triplay-footer .credit-footer p {
   margin: 0 70px;
 }
 
+@media (max-width: 575.98px) {
+  .triplay-banner {
+    margin-top: 50px;
+  }
+  .triplay-banner .double-banner {
+    display: flex;
+    flex-direction: row;
+    text-align: -webkit-center;
+  }
+  .triplay-banner .double-banner .slick-banner {
+    margin: 15px;
+  }
+  .triplay-banner .double-banner .slick-slide {
+    margin: 10px 7px;
+  }
+  .triplay-banner .double-banner .slick-slide img {
+    max-width: 100%;
+  }
+  .triplay-banner .double-banner .slick-list {
+    margin: 0 -7px;
+  }
+}
 .triplay-game-list {
   margin-top: 100px;
 }
@@ -11715,6 +11960,42 @@ footer.triplay-footer .credit-footer p {
   filter: blur(2px);
 }
 
+@media (max-width: 575.98px) {
+  .triplay-game-list {
+    margin-top: 50px;
+  }
+  .triplay-game-list .heading-game h3, .triplay-game-list .heading-game .h3 {
+    font-size: 30px;
+  }
+  .triplay-game-list .heading-game p {
+    font-size: 15px;
+  }
+  .triplay-game-list .game-list__wrapper {
+    padding: 0;
+  }
+  .triplay-game-list .game-list__wrapper .card-game {
+    margin-bottom: 20px;
+  }
+  .triplay-game-list .game-list__wrapper .card-game img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+    max-height: 80px;
+  }
+  .triplay-game-list .game-list__wrapper .card-game .game-name {
+    border-radius: 0 0 10px 10px;
+    height: 30px;
+  }
+  .triplay-game-list .game-list__wrapper .card-game .game-name h2, .triplay-game-list .game-list__wrapper .card-game .game-name .h2 {
+    font-size: 10px;
+    line-height: 1.1;
+    padding-top: 5px;
+  }
+  .triplay-game-list .game-list__wrapper .card-game .button-shop {
+    padding: 3px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+}
 .triplay-voucher-list {
   margin-top: 100px;
 }
@@ -11785,6 +12066,42 @@ footer.triplay-footer .credit-footer p {
   filter: blur(2px);
 }
 
+@media (max-width: 575.98px) {
+  .triplay-voucher-list {
+    margin-top: 50px;
+  }
+  .triplay-voucher-list .heading-voucher h3, .triplay-voucher-list .heading-voucher .h3 {
+    font-size: 30px;
+  }
+  .triplay-voucher-list .heading-voucher p {
+    font-size: 15px;
+  }
+  .triplay-voucher-list .voucher-list__wrapper {
+    padding: 0;
+  }
+  .triplay-voucher-list .voucher-list__wrapper .card-voucher {
+    margin-bottom: 20px;
+  }
+  .triplay-voucher-list .voucher-list__wrapper .card-voucher img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+    max-height: 80px;
+  }
+  .triplay-voucher-list .voucher-list__wrapper .card-voucher .voucher-name {
+    border-radius: 0 0 10px 10px;
+    height: 30px;
+  }
+  .triplay-voucher-list .voucher-list__wrapper .card-voucher .voucher-name h2, .triplay-voucher-list .voucher-list__wrapper .card-voucher .voucher-name .h2 {
+    font-size: 10px;
+    line-height: 1.1;
+    padding-top: 5px;
+  }
+  .triplay-voucher-list .voucher-list__wrapper .card-voucher .button-shop {
+    padding: 3px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+}
 .triplay-tutorial {
   margin-top: 50px;
 }
@@ -11818,6 +12135,28 @@ footer.triplay-footer .credit-footer p {
   border-radius: 30px;
 }
 
+@media (max-width: 575.98px) {
+  .triplay-tutorial {
+    margin-top: 30px;
+  }
+  .triplay-tutorial .heading-tutorial h3, .triplay-tutorial .heading-tutorial .h3 {
+    font-size: 30px;
+  }
+  .triplay-tutorial .heading-tutorial p {
+    font-size: 15px;
+  }
+  .triplay-tutorial .video-wrapper {
+    padding: 0;
+  }
+  .triplay-tutorial .video-wrapper .embed-video-wrapper {
+    padding: 0 5px;
+  }
+  .triplay-tutorial .video-wrapper .embed-video-wrapper iframe {
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 100px;
+  }
+}
 .triplay-checkout-description {
   margin: 60px 0;
 }
@@ -11851,6 +12190,24 @@ footer.triplay-footer .credit-footer p {
   text-decoration: none;
 }
 
+@media (max-width: 575.98px) {
+  .triplay-checkout-description {
+    margin: 30px 0;
+  }
+  .triplay-checkout-description .checkout-banner-wrapper {
+    padding: 0;
+  }
+  .triplay-checkout-description .checkout-detail {
+    padding: 0 10px;
+  }
+  .triplay-checkout-description .checkout-detail h2, .triplay-checkout-description .checkout-detail .h2 {
+    font-size: 30px;
+    margin: 20px 0;
+  }
+  .triplay-checkout-description .checkout-detail p {
+    font-size: 15px;
+  }
+}
 .triplay-item-option {
   margin: 50px 0;
 }
@@ -11892,6 +12249,24 @@ footer.triplay-footer .credit-footer p {
   border: 2px solid #000F2C;
 }
 
+@media (max-width: 575.98px) {
+  .triplay-item-option {
+    margin: 30px 0;
+  }
+  .triplay-item-option h3, .triplay-item-option .h3 {
+    font-size: 30px;
+  }
+  .triplay-item-option .button-option__wrapper {
+    padding: 0 10px;
+    margin: 0;
+  }
+  .triplay-item-option .button-option__wrapper .option-item {
+    font-size: 15px;
+    height: 40px;
+    margin: 10px auto;
+    border: 3px solid #000F2C;
+  }
+}
 .triplay-payment {
   margin: 50px 0;
 }
@@ -12029,6 +12404,62 @@ footer.triplay-footer .credit-footer p {
   display: block;
 }
 
+@media (max-width: 575.98px) {
+  .triplay-payment {
+    margin: 30px 0;
+  }
+  .triplay-payment h3, .triplay-payment .h3 {
+    font-size: 30px;
+  }
+  .triplay-payment .auto-payment {
+    flex-direction: column;
+  }
+  .triplay-payment .auto-payment .card-payment {
+    width: 100%;
+  }
+  .triplay-payment .auto-payment .card-payment img {
+    margin-bottom: 30px;
+  }
+  .triplay-payment .auto-payment .card-payment .total-price {
+    right: 30px;
+    bottom: 35px;
+  }
+  .triplay-payment .auto-payment .card-payment .total-price p {
+    font-size: 15px;
+  }
+  .triplay-payment .auto-payment .card-payment .total-price span {
+    font-size: 20px;
+  }
+  .triplay-payment .auto-payment .card-payment .inc-ppn {
+    display: block;
+  }
+  .triplay-payment .manual-payment {
+    margin: 30px 0;
+  }
+  .triplay-payment .manual-payment h3, .triplay-payment .manual-payment .h3 {
+    font-size: 30px;
+  }
+  .triplay-payment .manual-payment .card-payment.manual-direct {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .triplay-payment .manual-payment .card-payment.manual-direct img {
+    margin-bottom: 30px;
+  }
+  .triplay-payment .manual-payment .card-payment.manual-direct .total-price {
+    right: 30px;
+    bottom: 35px;
+  }
+  .triplay-payment .manual-payment .card-payment.manual-direct .total-price p {
+    font-size: 15px;
+  }
+  .triplay-payment .manual-payment .card-payment.manual-direct .total-price span {
+    font-size: 20px;
+  }
+  .triplay-payment .manual-payment .card-payment.manual-direct .inc-ppn {
+    display: block;
+  }
+}
 .triplay-auto-payment {
   margin: 60px 0;
   display: none;
@@ -12105,9 +12536,59 @@ footer.triplay-footer .credit-footer p {
   color: #f8fafc;
 }
 
+@media (max-width: 575.98px) {
+  .triplay-auto-payment {
+    margin: 30px 0;
+  }
+  .triplay-auto-payment .centered-line {
+    padding: 0;
+  }
+  .triplay-auto-payment .centered-line h3, .triplay-auto-payment .centered-line .h3 {
+    font-size: 30px;
+  }
+  .triplay-auto-payment .centered-line .form-wrapper {
+    padding: 30px 0;
+  }
+  .triplay-auto-payment .centered-line .form-wrapper form {
+    padding: 0 20px;
+  }
+  .triplay-auto-payment .centered-line .form-wrapper form p {
+    font-size: 15px;
+  }
+  .triplay-auto-payment .centered-line .form-wrapper form input {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    padding-left: 0;
+  }
+  .triplay-auto-payment .centered-line .form-wrapper form input::-moz-placeholder {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.529);
+    font-weight: 300;
+  }
+  .triplay-auto-payment .centered-line .form-wrapper form input:-ms-input-placeholder {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.529);
+    font-weight: 300;
+  }
+  .triplay-auto-payment .centered-line .form-wrapper form input::placeholder {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.529);
+    font-weight: 300;
+  }
+  .triplay-auto-payment .centered-line .form-wrapper form input:active {
+    background-color: transparent;
+  }
+  .triplay-auto-payment .centered-line .form-wrapper form #pay {
+    margin-top: 30px;
+    font-size: 15px;
+    height: 40px;
+    width: 100px;
+    margin-bottom: 30px;
+  }
+}
 .triplay-manual-payment {
   margin: 60px 0;
-  display: block;
   display: none;
 }
 .triplay-manual-payment h3, .triplay-manual-payment .h3 {
@@ -12194,5 +12675,62 @@ footer.triplay-footer .credit-footer p {
 .triplay-manual-payment .centered-line .form-wrapper form #pay:hover {
   background-color: #FF8A00;
   color: #f8fafc;
+}
+
+@media (max-width: 575.98px) {
+  .triplay-manual-payment {
+    margin: 30px 0;
+  }
+  .triplay-manual-payment .centered-line {
+    padding: 0;
+  }
+  .triplay-manual-payment .centered-line h3, .triplay-manual-payment .centered-line .h3 {
+    font-size: 30px;
+  }
+  .triplay-manual-payment .centered-line .form-wrapper {
+    padding: 30px 0;
+  }
+  .triplay-manual-payment .centered-line .form-wrapper form {
+    padding: 0 20px;
+  }
+  .triplay-manual-payment .centered-line .form-wrapper form p {
+    font-size: 15px;
+  }
+  .triplay-manual-payment .centered-line .form-wrapper form input, .triplay-manual-payment .centered-line .form-wrapper form select {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    padding-left: 0;
+  }
+  .triplay-manual-payment .centered-line .form-wrapper form input::-moz-placeholder, .triplay-manual-payment .centered-line .form-wrapper form select::-moz-placeholder {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.529);
+    font-weight: 300;
+  }
+  .triplay-manual-payment .centered-line .form-wrapper form input:-ms-input-placeholder, .triplay-manual-payment .centered-line .form-wrapper form select:-ms-input-placeholder {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.529);
+    font-weight: 300;
+  }
+  .triplay-manual-payment .centered-line .form-wrapper form input::placeholder, .triplay-manual-payment .centered-line .form-wrapper form select::placeholder {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.529);
+    font-weight: 300;
+  }
+  .triplay-manual-payment .centered-line .form-wrapper form input:active, .triplay-manual-payment .centered-line .form-wrapper form select:active {
+    background-color: transparent;
+  }
+  .triplay-manual-payment .centered-line .form-wrapper form select {
+    padding: 0;
+    text-align: left;
+    font-size: 15px;
+  }
+  .triplay-manual-payment .centered-line .form-wrapper form #pay {
+    margin-top: 30px;
+    font-size: 15px;
+    height: 40px;
+    width: 100px;
+    margin-bottom: 30px;
+  }
 }
 

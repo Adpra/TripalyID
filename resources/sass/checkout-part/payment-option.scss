@@ -134,3 +134,60 @@
         }
     }
 }
+
+@include media-breakpoint-down(sm) {
+    .triplay-payment {
+        margin: 30px 0;
+        h3 {
+            font-size: 30px;
+        }
+        .auto-payment {
+            flex-direction: column;
+            .card-payment {
+                width: 100%;
+                img {
+                    margin-bottom: 30px;
+                }
+                .total-price {
+                    right: 30px;
+                    bottom: 35px;
+                    p {
+                        font-size: 15px;
+                    }
+                    span {
+                        font-size: 20px;
+                    }
+                }
+                .inc-ppn {
+                    display: block;
+                }
+            }
+        }
+        .manual-payment {
+            margin: 30px 0;
+            h3 {
+                font-size: 30px;
+            }
+            .card-payment.manual-direct {
+                width: 100%;
+                margin-top: 20px;
+                img {
+                    margin-bottom: 30px;
+                }
+                .total-price {
+                    right: 30px;
+                    bottom: 35px;
+                    p {
+                        font-size: 15px;
+                    }
+                    span {
+                        font-size: 20px;
+                    }
+                }
+                .inc-ppn {
+                    display: block;
+                }
+            }
+        }
+    }
+}
