@@ -12,6 +12,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
                 <a href="/admin/tambah" class="btn btn-primary">Tambah Data</a>
+                <a href="/admin/addPrice" class="btn btn-primary">Tambah Harga</a>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->

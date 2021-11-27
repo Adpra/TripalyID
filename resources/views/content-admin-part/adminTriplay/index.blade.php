@@ -27,6 +27,7 @@
                 @csrf
             <button class="btn btn-danger btn-sm  my-3" type="submit">Delete</button>
         </form>
+        <a href="/admin/{{$triplay->id}}/price" class="btn btn-primary my-3 btn-sm">Harga</a>
         </td>
         </tr>
         @endforeach
