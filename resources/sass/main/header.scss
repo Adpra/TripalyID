@@ -1,4 +1,4 @@
-header {
+header.main-header {
     height: 98px;
     position: relative;
     z-index: 99;
@@ -67,7 +67,7 @@ header {
 //  Breakpoint use max width BT
 
 @include media-breakpoint-down(sm) { 
-    header {
+    header.main-header {
         height: 65px !important;
         background-color: $color-primary-black;
         .main-nav {

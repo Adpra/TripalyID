@@ -1,6 +1,5 @@
 .triplay-manual-payment {
     margin: 60px 0;
-    display: block;
     display: none;
     h3 {
         font-size: 48px;
@@ -72,6 +71,54 @@
                     &:hover {
                         background-color: $button-color;
                         color: $color-primary-white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-down(sm) {
+    .triplay-manual-payment {
+        margin: 30px 0;
+        .centered-line {
+            padding: 0;
+            h3 {
+                font-size: 30px;
+            }
+            .form-wrapper {
+                padding: 30px 0;
+                form {
+                    padding: 0 20px;
+                    p {
+                        font-size: 15px;
+                    }
+                    input, select {
+                        width: 100%;
+                        height: 40px;
+                        text-align: center;
+                        padding-left: 0;
+                        &::placeholder {
+                            font-size: 15px;
+                            color: rgba(255, 255, 255, 0.529);
+                            font-weight: 300;
+                        }
+                        &:active {
+                            background-color: transparent;
+                        }
+                    }
+                    select {
+                        padding: 0;
+                        text-align: left;
+                        font-size: 15px;
+                    }
+                    #pay {
+                        margin-top: 30px;
+                        font-size: 15px;
+                        height: 40px;
+                        width: 100px;
+                        margin-bottom: 30px;
                     }
                 }
             }

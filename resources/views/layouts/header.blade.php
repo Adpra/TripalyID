@@ -1,4 +1,4 @@
-<header>
+<header class="main-header">
     <div class="black-hamburger">
         <img src="{{ asset('img/mobile-white.png') }}" alt="Triplay">
     </div>
