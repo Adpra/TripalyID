@@ -2,7 +2,7 @@
     height: 98px;
     position: relative;
     z-index: 99;
-    background-color: $color-primary-black;
+    background-color: $color-primary-black; 
     .triplay-navbar__home {
         display: flex;
         flex-direction: row;
@@ -64,4 +64,10 @@
         right: 200px;
         top: 15px;
     }
+}
+
+
+
+@include media-breakpoint-down(sm) {
+    
 }
