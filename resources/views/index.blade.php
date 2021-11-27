@@ -15,6 +15,7 @@
 @endif
 @include('template-part/voucher')
 @include('template-part/tutorial')
+<script type="text/javascript" src="{{ asset('js/home.js') }}"></script>
 @endsection
 
 @section('footer')

@@ -1,7 +1,7 @@
 <header class="triplay-second-header">
     <nav>
-        <div class="container">
-        <ul class="triplay-navbar__home">
+        <div class="container clearfix">
+        <ul class="triplay-navbar__home"> 
             <li class="list-nav"><a href="#">Home</a></li>
             <li class="list-nav"><a href="#">Partner</a><img class="white-arrow" src="{{ asset('img/white-arrow.svg') }}"></li>
             <ul class="dropdown-nav dropdown-first">

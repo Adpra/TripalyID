@@ -1,4 +1,3 @@
-
 let autoPayment = document.getElementsByClassName('triplay-auto-payment')[0].style;
 let paymentWrapper = document.getElementsByClassName('triplay-manual-payment')[0].style;
 

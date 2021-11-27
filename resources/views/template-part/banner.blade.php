@@ -2,7 +2,7 @@
     <div class="container">
         <div class="banner-wrapper">
             <div class="single-banner">
-                <img src="{{ asset('img/single-banner.jpg') }}">
+                <img class="freeze-banner" src="{{ asset('img/single-banner.jpg') }}">
             </div>
             <div class="double-banner autoplay">
                 <div class="slick-banner">
@@ -19,5 +19,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 </section>

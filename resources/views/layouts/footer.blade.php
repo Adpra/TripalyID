@@ -1,17 +1,17 @@
 <footer class="triplay-footer">
     <div class="container">
         <div class="triplay-company">
-            <div class="column-company">
+            <div class="column-company logo">
                 <img src="{{ asset('img/triplay.png') }}" alt="Triplay ID">
             </div>
-            <div class="column-company">
+            <div class="column-company company">
                 <h4>Company</h4>
                 <ul>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                 </ul>
-            </div>
+            </div> 
         </div>
         <div class="triplay-contact">
             <div class="contact-detail left">

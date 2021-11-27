@@ -65,4 +65,62 @@
             }
         }
     }
+    .hero-mobile {
+        display: none;
+    }
+}
+
+// Brealpoint with max width
+
+@include media-breakpoint-down(sm) { 
+    .main-hero {
+        background-image: none !important;
+        height: 750px;
+        .hero-detail {
+            bottom: unset;
+            top: 200px;
+            h3 {
+                font-size: 30px;
+                font-weight: 900;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+        .hero-button {
+
+            .button-left {
+                font-size: 15px;
+                padding: 10px 10px;
+                height: 40px;
+                letter-spacing: 2px;
+                line-height: 1;
+                margin-right: 20px;
+            }
+            .button-right {
+                font-size: 15px;
+                padding: 10px 10px;
+                height: 39px;
+                box-shadow: 0 5px 15px -7px $color-primary-black;
+                line-height: 1;
+                letter-spacing: 1px;
+                border: 2px solid $color-primary-black;    
+                font-weight: 700; 
+            }
+        }
+        .hero-mobile {
+            position: absolute;
+            display: block;
+            bottom: 0;
+            background-repeat: no-repeat;
+            background-position: bottom 0 left 0;
+            img {
+                margin: 0 auto;
+                position: relative;
+                left: 50px;
+                bottom: -30px;
+                width: 75%;
+            }
+        }
+    }
 }

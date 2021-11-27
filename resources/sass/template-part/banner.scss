@@ -2,8 +2,13 @@
     margin-top: 100px;
     .banner-wrapper {
         text-align: center;
-        display: flex;
+        display: flex; 
         flex-direction: column;
+        .single-banner {
+            .freeze-banner {
+                max-width: 100%;
+            }
+        }
     }
     .double-banner {
         display: flex;
@@ -19,5 +24,27 @@
             margin: 0 70px;
         }
     }
+}
 
+@include media-breakpoint-down(sm) {
+    .triplay-banner {
+        margin-top: 50px;
+        .double-banner {
+            display: flex;
+            flex-direction: row;
+            text-align: -webkit-center;
+            .slick-banner {
+                margin: 15px;
+            }
+            .slick-slide {
+                margin: 10px 7px;
+                img {
+                    max-width: 100%;
+                }
+            }
+            .slick-list {
+                margin: 0 -7px;
+            }
+        }
+    }
 }
