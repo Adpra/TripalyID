@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Voucher;
+use App\Models\Video;
 use Illuminate\Http\Request;
 
-class VoucherController extends Controller
+class VideoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,8 @@ class VoucherController extends Controller
      */
     public function index()
     {
-        //
+        $videos = Video::all();
+        return view('content-admin-part/video/video',compact('videos'));
     }
 
     /**
@@ -24,7 +25,7 @@ class VoucherController extends Controller
      */
     public function create()
     {
-        //
+        return view('content-admin-part/video/addVideo');
     }
 
     /**
@@ -35,16 +36,20 @@ class VoucherController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Video::insert([
+            'url' => $request->get('url'),
+
+            ]);
+        return redirect('/admin/video')->with('status', 'Data Berhasil Di Tambahkan');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Voucher  $voucher
+     * @param  \App\Models\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function show(Voucher $voucher)
+    public function show(Video $video)
     {
         //
     }
@@ -52,36 +57,40 @@ class VoucherController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Voucher  $voucher
+     * @param  \App\Models\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function edit(Voucher $voucher)
+    public function edit(Video $video)
     {
-        //
+        return view('content-admin-part/video/editVideo',compact('video'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Voucher  $voucher
+     * @param  \App\Models\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Voucher $voucher)
+    public function update(Request $request, Video $video)
     {
-        //
+        Video::where('id', $video->id)
+        ->update([
+            'url' => $request->url,
+
+        ]);
+        return redirect('/admin/video')->with('status', 'Data Berhasil Di Di Ubah');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Voucher  $voucher
+     * @param  \App\Models\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Voucher $voucher)
+    public function destroy(Video $video)
     {
-        voucher::destroy($voucher->id);
-
-        return redirect('/admin')->with('status', 'Data Berhasil Di Dihapus');
+        Video::destroy($video->id);
+        return redirect('/admin/video')->with('status', 'Data Berhasil Di Di Ubah');
     }
 }

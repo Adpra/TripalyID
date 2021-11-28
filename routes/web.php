@@ -4,7 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\TriplayController;
 use App\Http\Controllers\PriceController;
-use App\Http\Controllers\VoucherController;
+use App\Http\Controllers\ImageSlideController;
+use App\Http\Controllers\ImageBannerController;
+use App\Http\Controllers\VideoController;
 use App\Http\Controllers\HomeController;
 
 /*
@@ -42,4 +44,31 @@ Route::get('/admin/addPrice' , [PriceController::class , 'create']);
 Route::post('/admin/tambah/price' , [PriceController::class , 'store']);
 Route::patch('/admin/{triplay}/price' , [PriceController::class , 'update']);
 Route::delete('/admin/{price}/price' , [PriceController::class , 'destroy']);
-Route::delete('/admin/{voucher}/voucher' , [VoucherController::class , 'destroy']);
+
+
+
+Route::get('/admin/imageslide' , [ImageSlideController::class , 'index']);
+Route::get('/admin/addslide' , [ImageSlideController::class , 'create']);
+Route::post('/admin/addSlide/data' , [ImageSlideController::class , 'store']);
+Route::get('/admin/{imageSlide}/slideEdit' , [ImageSlideController::class , 'edit']);
+Route::patch('/admin/slideEdit/{imageSlide}' , [ImageSlideController::class , 'update']);
+Route::delete('/admin/imageSlide/{imageSlide}' , [ImageSlideController::class , 'destroy']);
+
+
+
+Route::get('/admin/imagebanner' , [ImageBannerController::class , 'index']);
+Route::get('/admin/addbanner' , [ImageBannerController::class , 'create']);
+Route::post('/admin/addBanner/data' , [ImageBannerController::class , 'store']);
+Route::get('/admin/{imageBanner}/bannerEdit' , [ImageBannerController::class , 'edit']);
+Route::patch('/admin/bannerEdit/{imageBanner}' , [ImageBannerController::class , 'update']);
+Route::delete('/admin/imageBanner/{imageBanner}' , [ImageBannerController::class , 'destroy']);
+
+
+
+Route::get('/admin/video' , [VideoController::class , 'index']);
+Route::get('/admin/addvideo' , [VideoController::class , 'create']);
+Route::post('/admin/addVideo/data' , [VideoController::class , 'store']);
+Route::get('/admin/{video}/editVideo' , [VideoController::class , 'edit']);
+Route::patch('/admin/editVideo/{video}' , [VideoController::class , 'update']);
+Route::delete('/admin/video/{video}' , [VideoController::class , 'destroy']);
+
