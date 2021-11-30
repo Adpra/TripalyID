@@ -1,7 +1,7 @@
 <header class="triplay-second-header">
     <div class="black-hamburger">
         <img src="{{ asset('img/mobile-white.png') }}" alt="Triplay">
-    </div>
+    </div>  
     <nav class="second-nav">
         <div class="container clearfix">
         <ul class="triplay-navbar__home navbar-mobile"> 
