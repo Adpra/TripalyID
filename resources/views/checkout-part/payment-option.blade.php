@@ -8,7 +8,7 @@
                     <img src="{{ asset('img/allpayment.png') }}">
                     <div class="total-price">
                         <p>Harga :</p>
-                        <span>10000</span>
+                        <span class="price-field-manual">10000</span>
                     </div>
                     <div class="inc-ppn">
                         <p>Lebih Murah & Sudah Termasuk PPN</p>
@@ -23,7 +23,7 @@
                 <img src="{{ asset('img/bca.png') }}">
                 <div class="total-price">
                     <p>Harga :</p>
-                    <span>10000</span>
+                    <span class="price-field">10000</span>
                 </div>
                 <div class="inc-ppn">
                     <p>Sudah termasuk PPN</p>
@@ -33,7 +33,7 @@
                 <img src="{{ asset('img/gopay.png') }}">
                 <div class="total-price">
                     <p>Harga :</p>
-                    <span>10000</span>
+                    <span class="price-field">10000</span>
                 </div>
                 <div class="inc-ppn">
                     <p>Sudah termasuk PPN</p>

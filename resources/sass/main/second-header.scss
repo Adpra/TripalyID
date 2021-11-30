@@ -3,6 +3,9 @@
     position: relative;
     z-index: 99;
     background-color: $color-primary-black; 
+    .black-hamburger {
+        display: none;
+    }
     .triplay-navbar__home {
         display: flex;
         flex-direction: row;
@@ -79,7 +82,7 @@
         }
     }
     .black-hamburger {
-        display: block;
+        display: block !important;
         position: absolute;
         left: 30px;
         top: 20px;

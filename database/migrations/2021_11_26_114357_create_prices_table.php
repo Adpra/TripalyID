@@ -17,11 +17,9 @@ class CreatePricesTable extends Migration
             $table->id();
             $table->unsignedBigInteger('triplay_id')->nullable();
             $table->string('harga');
-            $table->string('item');
+            $table->string('item'); 
             $table->timestamps();
         });
-
-
 
         Schema::table('prices', function(Blueprint $table){
             $table->foreign('triplay_id')
@@ -32,9 +30,6 @@ class CreatePricesTable extends Migration
         });
 
     }
-
-
-
 
     /**
      * Reverse the migrations.

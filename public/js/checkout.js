@@ -39,3 +39,15 @@ let mobileMenu = document.getElementsByClassName('black-hamburger')[0]
                         let navbar = document.getElementsByClassName('second-nav')[0].style;
                         return navbar.display == "block" ? navbar.display = "none" : navbar.display = "block";
                     });
+
+// Send Value Price from item to payment div
+function getValueItemButton(val) {
+    let changeValPrice = document.querySelectorAll('.price-field');
+    let changeValPriceManual = document.getElementsByClassName('price-field-manual')[0].innerHTML = val.value;
+    for( let i = 0; i < changeValPrice.length; i++){
+        let price = val.value;
+        let ppn = ( 5 / 100 ) * price;
+        let total = parseInt(price) + parseInt(ppn);
+        changeValPrice[i].innerHTML = total;
+    }
+}

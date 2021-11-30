@@ -11403,6 +11403,9 @@ header.main-header .main-logo {
   z-index: 99;
   background-color: #000F2C;
 }
+.triplay-second-header .black-hamburger {
+  display: none;
+}
 .triplay-second-header .triplay-navbar__home {
   display: flex;
   flex-direction: row;
@@ -11477,7 +11480,7 @@ header.main-header .main-logo {
   }
 
   .black-hamburger {
-    display: block;
+    display: block !important;
     position: absolute;
     left: 30px;
     top: 20px;

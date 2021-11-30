@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Price extends Model
 {
-    protected $fillable = ['id','harga'];
+    protected $fillable = ['id','harga','item'];
 
     public function triplay(){
         return $this->BelongsTo(Triplay::class);
