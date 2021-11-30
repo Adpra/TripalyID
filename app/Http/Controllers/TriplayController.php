@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Triplay;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
@@ -59,7 +60,7 @@ class TriplayController extends Controller
             'image' => $image,
             'imageCheckout' => $imageCheckout
             ]);
-        return redirect('/admin')->with('status', 'Data Berhasil Di Tambahkan');
+        return Redirect::back()->with('status', 'Data Berhasil Di Tambahkan');
     }
 
     /**
@@ -122,7 +123,7 @@ class TriplayController extends Controller
              'name' => $request->name,
              'description' => $request->description,
          ]);
-         return redirect('/admin')->with('status', 'Data Berhasil Di Di Ubah');
+         return Redirect::back()->with('status', 'Data Berhasil Di Di Ubah');
     }
 
     /**
@@ -135,6 +136,6 @@ class TriplayController extends Controller
     {
         Triplay::destroy($triplay->id);
 
-        return redirect('/admin')->with('status', 'Data Berhasil Di Dihapus');
+        return Redirect::back()->with('status', 'Data Berhasil Di Dihapus');
     }
 }

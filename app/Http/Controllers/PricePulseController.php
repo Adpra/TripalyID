@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Price;
-use App\Models\Triplay;
+use App\Models\PricePulse;
+use App\Models\Pulse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
-use Illuminate\Support\Str;
 
-class PriceController extends Controller
+class PricePulseController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +26,7 @@ class PriceController extends Controller
      */
     public function create()
     {
-
+        //
     }
 
     /**
@@ -36,20 +35,17 @@ class PriceController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, Triplay $triplay)
+    public function store(Request $request)
     {
-
-        // if($request->get('triplay_id')){
-        //     $id = $request->get('triplay_id')->$triplay->id;
-
-        // }
-
-        Price::insert([
-            'triplay_id' =>$request->get('triplay_id'),
-            'harga' => $request->get('harga'),
+        PricePulse::insert([
+            'pulse_id' =>$request->get('pulse_id'),
+            'price' => $request->get('price'),
             'item' => $request->get('item'),
 
             ]);
+
+
+
 
 
         return Redirect::back()->with('status', 'Data Berhasil Di Tambahkan');
@@ -58,10 +54,10 @@ class PriceController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Price  $price
+     * @param  \App\Models\PricePulse  $pricePulse
      * @return \Illuminate\Http\Response
      */
-    public function show(Price $price)
+    public function show(PricePulse $pricePulse)
     {
         //
     }
@@ -69,44 +65,56 @@ class PriceController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Price  $price
+     * @param  \App\Models\PricePulse  $pricePulse
      * @return \Illuminate\Http\Response
      */
-    public function edit(Triplay $triplay)
+    public function edit(Pulse $pulse)
     {
-        return view('content-admin-part\adminTriplay\price', compact('triplay'));
+        return view('content-admin-part\pulsa\pricePulse', compact('pulse'));
+
+
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Price  $price
+     * @param  \App\Models\PricePulse  $pricePulse
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Price $price)
+    public function update(Request $request,PricePulse $pricePulse)
     {
-        Price::where('id', $price->id)
+
+        PricePulse::where('id', $pricePulse->id)
         ->update([
            // 'nama' => $request->nama,
            // 'triplay_id'=>$request->triplay_id,
-            'harga' => $request->harga,
+            'price' => $request->price,
             'item' => $request->item,
         ]);
 
 
-        return Redirect::back()->with('status', 'Data Berhasil Di Update');
+
+        // if( $request->submit == "Update"){
+        //     true;
+        // }else{
+        //     false;
+        // }
+
+
+
+        return Redirect::back()->with('status', 'Data Berhasil Di Tambahkan');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Price  $price
+     * @param  \App\Models\PricePulse  $pricePulse
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Price $price)
+    public function destroy(PricePulse $pricePulse)
     {
-        Price::destroy($price->id);
+        PricePulse::destroy($pricePulse->id);
 
 
         return Redirect::back()->with('status', 'Data Berhasil Di Dihapus');

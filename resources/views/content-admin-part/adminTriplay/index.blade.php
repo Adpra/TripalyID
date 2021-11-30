@@ -2,7 +2,6 @@
 
 @section('content-admin')
 <a href="/admin/tambah" class="btn btn-primary">Tambah Data</a>
-<a href="/admin/addPrice" class="btn btn-primary">Tambah Harga</a>
 <table class="table">
     <thead>
       <tr>

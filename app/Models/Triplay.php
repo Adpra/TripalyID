@@ -14,7 +14,5 @@ class Triplay extends Model
     public function Price(){
         return $this->hasMany(Price::class);
     }
-    public function Voucher(){
-        return $this->hasMany(Voucher::class);
-    }
+
 }
