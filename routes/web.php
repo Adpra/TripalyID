@@ -22,6 +22,17 @@ use App\Http\Controllers\HomeController;
 |
 */
 
+//  General Route 
+Route::get('/login/partner', function () {
+    return view('/login-partner');
+});
+Route::get('/signup/partner', function () {
+    return view('/signup');
+});
+Route::get('/collaboration', function () {
+    return view('/collaboration');
+});
+
 
 // Home Route
 Route::get('/' , [HomeController::class , 'homeView']);
@@ -86,3 +97,4 @@ Route::get('/admin/{pulse}/pricePulse' , [PricePulseController::class , 'edit'])
 Route::post('/admin/{pulse}/pricePulse' , [PricePulseController::class , 'store']);
 Route::patch('/admin/{pricePulse}/pricePulse' , [PricePulseController::class , 'update']);
 Route::delete('/admin/{pricePulse}/pricePulse' , [PricePulseController::class , 'destroy']);
+

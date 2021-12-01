@@ -29,6 +29,9 @@
             &:hover .white-arrow {
                 transform: rotate(0deg);
             }
+            span {
+                display: none;
+            }
         }
         .dropdown-nav {
             position: absolute;

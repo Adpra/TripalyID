@@ -10,11 +10,14 @@
 // Import AOS
 @import "~aos/dist/aos.css";
 
-// Import Base Theme
+// Import Base Theme & Main
 @import 'base/_variables.scss';
 @import 'main/header.scss';
 @import 'main/second-header.scss';
 @import 'main/footer.scss';
+@import 'main/login-partner.scss';
+@import 'main/signup.scss';
+@import 'main/collaboration.scss';
 
 // Import Template Part
 @import 'template-part/hero.scss';

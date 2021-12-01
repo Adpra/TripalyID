@@ -11431,6 +11431,9 @@ header.main-header .main-logo {
 .triplay-second-header .triplay-navbar__home .list-nav:hover .white-arrow {
   transform: rotate(0deg);
 }
+.triplay-second-header .triplay-navbar__home .list-nav span {
+  display: none;
+}
 .triplay-second-header .triplay-navbar__home .dropdown-nav {
   position: absolute;
   top: 50px;
@@ -11659,6 +11662,192 @@ footer.triplay-footer .credit-footer p {
   }
   footer.triplay-footer .credit-footer p {
     font-size: 13px;
+  }
+}
+.form-login-partner {
+  margin: 100px 0;
+}
+.form-login-partner .form-wrapper {
+  padding: 50px 30px;
+  background-color: #000F2C;
+  border-radius: 30px;
+}
+.form-login-partner .form-wrapper h3, .form-login-partner .form-wrapper .h3 {
+  font-size: 48px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #f8fafc;
+}
+.form-login-partner .form-wrapper h3 span, .form-login-partner .form-wrapper .h3 span {
+  color: #0d56dd;
+}
+.form-login-partner .form-wrapper p {
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  color: #f8fafc;
+  text-align: center;
+}
+.form-login-partner .form-wrapper p a {
+  text-decoration: none;
+  color: #0d56dd;
+}
+.form-login-partner .form-wrapper form {
+  display: flex;
+  flex-direction: column;
+}
+.form-login-partner .form-wrapper form input {
+  width: 75%;
+  margin: 0 auto;
+  height: 50px;
+  background-color: transparent;
+  color: #f8fafc;
+  font-size: 20px;
+  padding-left: 40px;
+  margin-bottom: 25px;
+  border: 1px solid #f8fafc;
+}
+.form-login-partner .form-wrapper form input::-moz-placeholder {
+  color: #f8fafc;
+}
+.form-login-partner .form-wrapper form input:-ms-input-placeholder {
+  color: #f8fafc;
+}
+.form-login-partner .form-wrapper form input::placeholder {
+  color: #f8fafc;
+}
+.form-login-partner .form-wrapper form #login-partner {
+  width: 200px;
+  margin: 30px auto;
+  height: 50px;
+  border-radius: 30px;
+}
+
+@media (max-width: 575.98px) {
+  .form-login-partner {
+    margin: 60px 0;
+  }
+  .form-login-partner .form-wrapper h3, .form-login-partner .form-wrapper .h3 {
+    font-size: 30px;
+  }
+  .form-login-partner .form-wrapper p {
+    font-size: 15px;
+  }
+  .form-login-partner .form-wrapper form input {
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 0;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .form-login-partner .form-wrapper form #login-partner {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 20px auto;
+  }
+}
+.form-signup-partner {
+  margin: 100px 0;
+}
+.form-signup-partner .form-wrapper {
+  padding: 50px 30px;
+  background-color: #000F2C;
+  border-radius: 30px;
+}
+.form-signup-partner .form-wrapper h3, .form-signup-partner .form-wrapper .h3 {
+  font-size: 48px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #f8fafc;
+}
+.form-signup-partner .form-wrapper h3 span, .form-signup-partner .form-wrapper .h3 span {
+  color: #0d56dd;
+}
+.form-signup-partner .form-wrapper p {
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  color: #f8fafc;
+  text-align: center;
+}
+.form-signup-partner .form-wrapper p a {
+  text-decoration: none;
+  color: #0d56dd;
+}
+.form-signup-partner .form-wrapper form {
+  display: flex;
+  flex-direction: column;
+}
+.form-signup-partner .form-wrapper form input {
+  width: 75%;
+  margin: 0 auto;
+  height: 50px;
+  background-color: transparent;
+  color: #f8fafc;
+  font-size: 20px;
+  padding-left: 40px;
+  margin-bottom: 25px;
+  border: 1px solid #f8fafc;
+}
+.form-signup-partner .form-wrapper form input::-moz-placeholder {
+  color: #f8fafc;
+}
+.form-signup-partner .form-wrapper form input:-ms-input-placeholder {
+  color: #f8fafc;
+}
+.form-signup-partner .form-wrapper form input::placeholder {
+  color: #f8fafc;
+}
+.form-signup-partner .form-wrapper form #login-partner {
+  width: 200px;
+  margin: 30px auto;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+.form-signup-partner .form-wrapper form #login-partner:hover {
+  background-color: #FF8A00;
+  color: #f8fafc;
+}
+
+@media (max-width: 575.98px) {
+  .form-signup-partner {
+    margin: 60px 0;
+  }
+  .form-signup-partner .form-wrapper h3, .form-signup-partner .form-wrapper .h3 {
+    font-size: 30px;
+  }
+  .form-signup-partner .form-wrapper p {
+    font-size: 15px;
+  }
+  .form-signup-partner .form-wrapper form input {
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 0;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .form-signup-partner .form-wrapper form input::-moz-placeholder {
+    font-weight: 300;
+  }
+  .form-signup-partner .form-wrapper form input:-ms-input-placeholder {
+    font-weight: 300;
+  }
+  .form-signup-partner .form-wrapper form input::placeholder {
+    font-weight: 300;
+  }
+  .form-signup-partner .form-wrapper form #login-partner {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 20px auto;
   }
 }
 .main-hero {
