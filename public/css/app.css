@@ -12846,6 +12846,32 @@ footer.triplay-footer .credit-footer p {
   font-family: "Nunito", sans-serif;
   font-size: 20px;
 }
+.triplay-auto-payment .centered-line .form-wrapper form label {
+  text-align: center;
+  color: #f8fafc;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  margin: 20px 0;
+  font-weight: 700;
+}
+.triplay-auto-payment .centered-line .form-wrapper form textarea {
+  width: 45%;
+  background-color: transparent;
+  color: #f8fafc;
+  font-size: 20px;
+  margin: 0 auto;
+  padding-left: 50px;
+  border: 2px solid #f8fafc;
+}
+.triplay-auto-payment .centered-line .form-wrapper form textarea::-moz-placeholder {
+  display: none;
+}
+.triplay-auto-payment .centered-line .form-wrapper form textarea:-ms-input-placeholder {
+  display: none;
+}
+.triplay-auto-payment .centered-line .form-wrapper form textarea::placeholder {
+  display: none;
+}
 .triplay-auto-payment .centered-line .form-wrapper form #pay {
   background-color: #f8fafc;
   margin: 0 auto;
@@ -12904,6 +12930,31 @@ footer.triplay-footer .credit-footer p {
   }
   .triplay-auto-payment .centered-line .form-wrapper form input:active {
     background-color: transparent;
+  }
+  .triplay-auto-payment .centered-line .form-wrapper form label {
+    text-align: center;
+    color: #f8fafc;
+    font-size: 15px;
+    font-family: "Quicksand", sans-serif;
+    margin: 10px 0;
+    font-weight: 600;
+  }
+  .triplay-auto-payment .centered-line .form-wrapper form textarea {
+    width: 100%;
+    background-color: transparent;
+    color: #f8fafc;
+    font-size: 15px;
+    margin: 0 auto;
+    border: 2px solid #f8fafc;
+  }
+  .triplay-auto-payment .centered-line .form-wrapper form textarea::-moz-placeholder {
+    display: none;
+  }
+  .triplay-auto-payment .centered-line .form-wrapper form textarea:-ms-input-placeholder {
+    display: none;
+  }
+  .triplay-auto-payment .centered-line .form-wrapper form textarea::placeholder {
+    display: none;
   }
   .triplay-auto-payment .centered-line .form-wrapper form #pay {
     margin-top: 30px;
@@ -12987,6 +13038,32 @@ footer.triplay-footer .credit-footer p {
 .triplay-manual-payment .centered-line .form-wrapper form select option {
   background-color: #000F2C;
 }
+.triplay-manual-payment .centered-line .form-wrapper form label {
+  text-align: center;
+  color: #f8fafc;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  margin: 20px 0;
+  font-weight: 700;
+}
+.triplay-manual-payment .centered-line .form-wrapper form textarea {
+  width: 45%;
+  background-color: transparent;
+  color: #f8fafc;
+  font-size: 20px;
+  margin: 0 auto;
+  padding-left: 50px;
+  border: 2px solid #f8fafc;
+}
+.triplay-manual-payment .centered-line .form-wrapper form textarea::-moz-placeholder {
+  display: none;
+}
+.triplay-manual-payment .centered-line .form-wrapper form textarea:-ms-input-placeholder {
+  display: none;
+}
+.triplay-manual-payment .centered-line .form-wrapper form textarea::placeholder {
+  display: none;
+}
 .triplay-manual-payment .centered-line .form-wrapper form #pay {
   background-color: #f8fafc;
   margin: 0 auto;
@@ -13050,6 +13127,31 @@ footer.triplay-footer .credit-footer p {
     padding: 0;
     text-align: left;
     font-size: 15px;
+  }
+  .triplay-manual-payment .centered-line .form-wrapper form label {
+    text-align: center;
+    color: #f8fafc;
+    font-size: 15px;
+    font-family: "Quicksand", sans-serif;
+    margin: 10px 0;
+    font-weight: 600;
+  }
+  .triplay-manual-payment .centered-line .form-wrapper form textarea {
+    width: 100%;
+    background-color: transparent;
+    color: #f8fafc;
+    font-size: 15px;
+    margin: 0 auto;
+    border: 2px solid #f8fafc;
+  }
+  .triplay-manual-payment .centered-line .form-wrapper form textarea::-moz-placeholder {
+    display: none;
+  }
+  .triplay-manual-payment .centered-line .form-wrapper form textarea:-ms-input-placeholder {
+    display: none;
+  }
+  .triplay-manual-payment .centered-line .form-wrapper form textarea::placeholder {
+    display: none;
   }
   .triplay-manual-payment .centered-line .form-wrapper form #pay {
     margin-top: 30px;

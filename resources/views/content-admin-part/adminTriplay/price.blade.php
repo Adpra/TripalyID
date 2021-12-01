@@ -45,9 +45,7 @@
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Harga {{$loop->iteration}}</label>
                 <input type="text" class="form-control" id="{{$ty->id}}" placeholder="Harga" name="harga" value="{{$ty->harga}}">
-
               </div>
-
         </div>
         <div class="col-5">
             <div class="mb-3">
@@ -61,7 +59,6 @@
               </div>
         </div>
     </form>
-
         <div class="col-2">
             <div class="mt-3">
                 <form action="/admin/{{$ty->id}}/price" method="post"  class="d-inline">

@@ -10,8 +10,13 @@
                         Kami segera topup diamond game anda langsung   
                     </P>
                     <input type="text" id="game_id" name="game_id" placeholder="ID Game">
+                    @if ( $slug === "mobile-legends")
+                    <input type="text" id="server" name="server" placeholder="Server">
+                    @endif
                     <input type="text" id="nickname" name="nickname" placeholder="Nickname">
-                    <input type="text" id="number" name="number" placeholder="Nomor Whatsapp">
+                    <input type="text" id="sender" name="sender" placeholder="Nama Pengirim">
+                    <label for="message">Catatan :</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
                     <button type="submit" name="pay" id="pay">Pay</button>
                 </form>
             </div>
