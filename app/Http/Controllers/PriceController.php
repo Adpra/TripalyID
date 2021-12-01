@@ -88,8 +88,6 @@ class PriceController extends Controller
     {
         Price::where('id', $price->id)
         ->update([
-           // 'nama' => $request->nama,
-           // 'triplay_id'=>$request->triplay_id,
             'harga' => $request->harga,
             'item' => $request->item,
         ]);

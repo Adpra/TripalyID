@@ -11850,6 +11850,140 @@ footer.triplay-footer .credit-footer p {
     margin: 20px auto;
   }
 }
+.form-collaboration {
+  margin: 100px 0;
+}
+.form-collaboration .form-wrapper {
+  padding: 50px 30px;
+  background-color: #000F2C;
+  border-radius: 30px;
+}
+.form-collaboration .form-wrapper h3, .form-collaboration .form-wrapper .h3 {
+  font-size: 48px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #f8fafc;
+}
+.form-collaboration .form-wrapper h3 span, .form-collaboration .form-wrapper .h3 span {
+  color: #0d56dd;
+}
+.form-collaboration .form-wrapper p {
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  color: #f8fafc;
+  text-align: center;
+}
+.form-collaboration .form-wrapper p a {
+  text-decoration: none;
+  color: #0d56dd;
+}
+.form-collaboration .form-wrapper form {
+  display: flex;
+  flex-direction: column;
+}
+.form-collaboration .form-wrapper form input {
+  width: 75%;
+  margin: 0 auto;
+  height: 50px;
+  background-color: transparent;
+  color: #f8fafc;
+  font-size: 20px;
+  padding-left: 40px;
+  margin-bottom: 25px;
+  border: 1px solid #f8fafc;
+}
+.form-collaboration .form-wrapper form input::-moz-placeholder {
+  color: #f8fafc;
+}
+.form-collaboration .form-wrapper form input:-ms-input-placeholder {
+  color: #f8fafc;
+}
+.form-collaboration .form-wrapper form input::placeholder {
+  color: #f8fafc;
+}
+.form-collaboration .form-wrapper form textarea {
+  width: 75%;
+  margin: 0 auto;
+  background-color: transparent;
+  font-size: 20px;
+  padding-left: 40px;
+  border: 2px solid #f8fafc;
+  color: #f8fafc;
+}
+.form-collaboration .form-wrapper form textarea::-moz-placeholder {
+  color: #f8fafc;
+  padding-top: 15px;
+}
+.form-collaboration .form-wrapper form textarea:-ms-input-placeholder {
+  color: #f8fafc;
+  padding-top: 15px;
+}
+.form-collaboration .form-wrapper form textarea::placeholder {
+  color: #f8fafc;
+  padding-top: 15px;
+}
+.form-collaboration .form-wrapper form #login-partner {
+  width: 200px;
+  margin: 30px auto;
+  height: 50px;
+  border-radius: 30px;
+  font-weight: 700;
+}
+.form-collaboration .form-wrapper form #login-partner:hover {
+  background-color: #FF8A00;
+  color: #f8fafc;
+}
+
+@media (max-width: 575.98px) {
+  .form-collaboration {
+    margin: 60px 0;
+  }
+  .form-collaboration .form-wrapper p {
+    font-size: 15px;
+  }
+  .form-collaboration .form-wrapper form input {
+    height: 40px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    width: 90%;
+    padding: 0;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .form-collaboration .form-wrapper form input::-moz-placeholder {
+    font-weight: 300;
+  }
+  .form-collaboration .form-wrapper form input:-ms-input-placeholder {
+    font-weight: 300;
+  }
+  .form-collaboration .form-wrapper form input::placeholder {
+    font-weight: 300;
+  }
+  .form-collaboration .form-wrapper form textarea {
+    text-align: center;
+    padding-left: 0;
+    height: 250px;
+    width: 90%;
+    font-size: 15px;
+  }
+  .form-collaboration .form-wrapper form textarea::-moz-placeholder {
+    color: transparent;
+  }
+  .form-collaboration .form-wrapper form textarea:-ms-input-placeholder {
+    color: transparent;
+  }
+  .form-collaboration .form-wrapper form textarea::placeholder {
+    color: transparent;
+  }
+  .form-collaboration .form-wrapper form textarea #login-partner {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 20px auto;
+  }
+}
 .main-hero {
   height: 850px;
   background-color: #ffffff;

@@ -1,0 +1,112 @@
+.form-collaboration {
+    margin: 100px 0;
+    .form-wrapper {
+        padding: 50px 30px;
+        background-color: $color-primary-black;
+        border-radius: 30px;
+        h3 {
+            font-size: 48px; 
+            font-family: $font-family;
+            font-weight: 900;
+            margin-bottom: 30px;
+            text-align: center;
+            color: $color-primary-white;
+            span {
+                color: $color-primary-blue;
+            }
+        }
+        p {
+            font-size: 20px;
+            font-family: $second-font-family;
+            color: $color-primary-white;
+            text-align: center;
+            a {
+                text-decoration: none;
+                color: $color-primary-blue;
+            }
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            input {
+                width: 75%;
+                margin: 0 auto;
+                height: 50px;
+                background-color: transparent;
+                color: $color-primary-white;
+                font-size: 20px;
+                padding-left: 40px;
+                margin-bottom: 25px;
+                border: 1px solid $color-primary-white;
+                &::placeholder {
+                    color: $color-primary-white;
+                }
+            }
+            textarea {
+                width: 75%;
+                margin: 0 auto;
+                background-color: transparent;
+                font-size: 20px;
+                padding-left: 40px;
+                border: 2px solid $color-primary-white;
+                color: $color-primary-white;
+                &::placeholder {
+                    color: $color-primary-white;
+                    padding-top: 15px;
+                }
+            }
+            #login-partner {
+                width: 200px;
+                margin: 30px auto;
+                height: 50px;
+                border-radius: 30px;
+                font-weight: 700;
+                &:hover {
+                    background-color: $button-color;
+                    color: $color-primary-white;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .form-collaboration {
+        margin: 60px 0;
+        .form-wrapper {
+            p {
+                font-size: 15px;
+            }
+            form {
+                input {
+                    height: 40px;
+                    margin-bottom: 15px;
+                    font-size: 18px;
+                    width: 90%;
+                    padding: 0;
+                    text-align: center;
+                    border-radius: 10px;
+                    &::placeholder {
+                        font-weight: 300;
+                    }
+                }
+                textarea {
+                    text-align: center;
+                    padding-left: 0;
+                    height: 250px;
+                    width: 90%;
+                    font-size: 15px;
+                    &::placeholder {
+                        color: transparent;
+                    }
+                #login-partner {
+                    width: 100px;
+                    height: 40px;
+                    border-radius: 20px;
+                    margin: 20px auto;
+                }
+            }
+        }
+    }
+}
+}

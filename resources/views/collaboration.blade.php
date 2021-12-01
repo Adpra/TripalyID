@@ -8,15 +8,17 @@
 <section class="form-collaboration">
     <div class="container">
         <div class="form-wrapper">
-            <h3>Triplay <span>ID</span></h3>
-            <p>Partner Resmi</p>
+            <p>Pastikan anda mengisi form dengan benar
+                untuk pemasaran dan kerjasama dengan triplay.id !</p>
             <form action="" method="POST">
                 {{ csrf_field() }} 
-                <input type="password" name="username" id="username" placeholder="Username">
-                <input type="text" name="password" id="oassword" placeholder="Password">
-                <button name="login-partner" id="login-partner">Login</button>
+                <input type="text" name="fullname" id="fullname" placeholder="Nama Lengkap">
+                <input type="text" name="email" id="email" placeholder="Email">
+                <input type="text" name="waNumber" id="waNumber" placeholder="Nomor WA">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Pesan"></textarea>
+                <button name="login-partner" id="login-partner">Kirim</button>
             </form>
-            <p>Belum jadi partner? <a href="#">Klik Disini !</a></p>
+            <p>Daftar pemasaran dan kerjasama dengan triplay indonesia</a></p>
         </div>
     </div>
 </section>

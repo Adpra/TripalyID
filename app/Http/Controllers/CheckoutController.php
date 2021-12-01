@@ -9,6 +9,8 @@ class CheckoutController extends Controller
 {
     public function index( $slug ) {
         $singleGameData = Triplay::where( 'slug' , $slug )->first();
-        return view('checkout' , ['dataGame' => $singleGameData]);
+        $dataPrices = $singleGameData->Price()->get();
+        return view('checkout' , ['dataGame' => $singleGameData,
+                                    'dataPrices' => $dataPrices]);
     }
 }
