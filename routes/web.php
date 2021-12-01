@@ -39,7 +39,7 @@ Route::get('/' , [HomeController::class , 'homeView']);
 
 
 // Checkout Page Route
-Route::get('/checkout/{slug}' , [CheckoutController::class , 'index']);
+Route::get('/checkout/game/{slug}' , [CheckoutController::class , 'index']);
 Route::get('/checkout/pulsa/{slug}' , [CheckoutController::class , 'pulse']);
 
 

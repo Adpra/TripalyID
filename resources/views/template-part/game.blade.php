@@ -9,7 +9,7 @@
             @foreach ($dataGame as $game)
                 <div class="card-game col-lg-4 col-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
                     <img src="{{ asset('storage/'.$game->image) }}" alt="{{ $game->nama }}">
-                    <a class="button-shop" href="/checkout/{{ $game->slug }}">BELI</a>
+                    <a class="button-shop" href="/checkout/game/{{ $game->slug }}">BELI</a>
                     <div class="game-name">
                         <h2>{{ $game->name }}</h2>
                     </div>
