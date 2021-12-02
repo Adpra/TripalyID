@@ -11397,6 +11397,54 @@ header.main-header .main-logo {
     right: 10px !important;
   }
 }
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  header.main-header {
+    height: 65px !important;
+    background-color: #000F2C;
+  }
+  header.main-header .main-nav {
+    display: none;
+  }
+  header.main-header .main-nav .container.clearfix {
+    padding: 0 !important;
+  }
+
+  .black-hamburger {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+  }
+
+  .triplay-navbar__home {
+    flex-direction: column !important;
+    top: 65px;
+    padding-bottom: 40px;
+    background-color: #000F2C;
+  }
+  .triplay-navbar__home a {
+    color: #f8fafc !important;
+    font-size: 15px !important;
+  }
+  .triplay-navbar__home .list-nav {
+    margin: 10px;
+    font-size: 15px;
+  }
+  .triplay-navbar__home .list-nav span {
+    display: contents !important;
+    margin-left: 10px;
+  }
+  .triplay-navbar__home .dropdown-nav {
+    position: unset !important;
+    text-align: unset !important;
+    margin: 20px 0;
+  }
+
+  .main-logo {
+    max-width: 150px;
+    right: 10px !important;
+  }
+}
 .triplay-second-header {
   height: 98px;
   position: relative;
@@ -11662,6 +11710,11 @@ footer.triplay-footer .credit-footer p {
   }
   footer.triplay-footer .credit-footer p {
     font-size: 13px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .column-company {
+    margin-right: 80px !important;
   }
 }
 .form-login-partner {
@@ -12104,6 +12157,62 @@ footer.triplay-footer .credit-footer p {
     width: 75%;
   }
 }
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .main-hero {
+    background-image: none !important;
+    height: 750px;
+  }
+  .main-hero .hero-detail {
+    bottom: unset;
+    top: 200px;
+    width: 90%;
+    margin-left: 1%;
+    text-align: center;
+  }
+  .main-hero .hero-detail h3, .main-hero .hero-detail .h3 {
+    font-size: 40px;
+    font-weight: 900;
+  }
+  .main-hero .hero-detail p {
+    font-size: 25px;
+  }
+  .main-hero .hero-button {
+    width: 100%;
+    justify-content: center;
+  }
+  .main-hero .hero-button .button-left {
+    font-size: 20px;
+    padding: 10px 10px;
+    height: 60px;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-right: 20px;
+  }
+  .main-hero .hero-button .button-right {
+    font-size: 20px;
+    padding: 10px 10px;
+    height: 60px;
+    box-shadow: 0 5px 15px -7px #000F2C;
+    line-height: 1;
+    letter-spacing: 1px;
+    border: 2px solid #000F2C;
+    font-weight: 700;
+  }
+  .main-hero .hero-mobile {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: bottom 0 left 0;
+  }
+  .main-hero .hero-mobile img {
+    margin: 0 auto;
+    position: relative;
+    left: 50px;
+    bottom: -30px;
+    width: 75%;
+  }
+}
 .triplay-intro {
   text-align: center;
   margin-top: 50px;
@@ -12192,6 +12301,28 @@ footer.triplay-footer .credit-footer p {
 }
 
 @media (max-width: 575.98px) {
+  .triplay-banner {
+    margin-top: 50px;
+  }
+  .triplay-banner .double-banner {
+    display: flex;
+    flex-direction: row;
+    text-align: -webkit-center;
+  }
+  .triplay-banner .double-banner .slick-banner {
+    margin: 15px;
+  }
+  .triplay-banner .double-banner .slick-slide {
+    margin: 10px 7px;
+  }
+  .triplay-banner .double-banner .slick-slide img {
+    max-width: 100%;
+  }
+  .triplay-banner .double-banner .slick-list {
+    margin: 0 -7px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .triplay-banner {
     margin-top: 50px;
   }
@@ -12320,6 +12451,44 @@ footer.triplay-footer .credit-footer p {
     padding: 3px 10px;
     font-size: 12px;
     border-radius: 5px;
+    transform: translate(50%, -100%);
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .triplay-game-list {
+    margin-top: 50px;
+  }
+  .triplay-game-list .heading-game h3, .triplay-game-list .heading-game .h3 {
+    font-size: 40px;
+  }
+  .triplay-game-list .heading-game p {
+    font-size: 25px;
+  }
+  .triplay-game-list .game-list__wrapper {
+    padding: 0;
+  }
+  .triplay-game-list .game-list__wrapper .card-game {
+    margin-bottom: 20px;
+  }
+  .triplay-game-list .game-list__wrapper .card-game img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+    max-height: 220px;
+  }
+  .triplay-game-list .game-list__wrapper .card-game .game-name {
+    border-radius: 0 0 10px 10px;
+    height: 60px;
+  }
+  .triplay-game-list .game-list__wrapper .card-game .game-name h2, .triplay-game-list .game-list__wrapper .card-game .game-name .h2 {
+    font-size: 20px;
+    line-height: 1.1;
+    padding-top: 5px;
+  }
+  .triplay-game-list .game-list__wrapper .card-game .button-shop {
+    padding: 3px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    transform: translate(50%, -100%);
   }
 }
 .triplay-voucher-list {
@@ -12428,6 +12597,42 @@ footer.triplay-footer .credit-footer p {
     border-radius: 5px;
   }
 }
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .triplay-voucher-list {
+    margin-top: 50px;
+  }
+  .triplay-voucher-list .heading-voucher h3, .triplay-voucher-list .heading-voucher .h3 {
+    font-size: 40px;
+  }
+  .triplay-voucher-list .heading-voucher p {
+    font-size: 25px;
+  }
+  .triplay-voucher-list .voucher-list__wrapper {
+    padding: 0;
+  }
+  .triplay-voucher-list .voucher-list__wrapper .card-voucher {
+    margin-bottom: 20px;
+  }
+  .triplay-voucher-list .voucher-list__wrapper .card-voucher img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+    max-height: 220px;
+  }
+  .triplay-voucher-list .voucher-list__wrapper .card-voucher .voucher-name {
+    border-radius: 0 0 10px 10px;
+    height: 60px;
+  }
+  .triplay-voucher-list .voucher-list__wrapper .card-voucher .voucher-name h2, .triplay-voucher-list .voucher-list__wrapper .card-voucher .voucher-name .h2 {
+    font-size: 20px;
+    line-height: 1.1;
+    padding-top: 5px;
+  }
+  .triplay-voucher-list .voucher-list__wrapper .card-voucher .button-shop {
+    padding: 3px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+}
 .triplay-tutorial {
   margin-top: 50px;
 }
@@ -12481,6 +12686,28 @@ footer.triplay-footer .credit-footer p {
     border-radius: 10px;
     max-width: 100%;
     max-height: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .triplay-tutorial {
+    margin-top: 30px;
+  }
+  .triplay-tutorial .heading-tutorial h3, .triplay-tutorial .heading-tutorial .h3 {
+    font-size: 30px;
+  }
+  .triplay-tutorial .heading-tutorial p {
+    font-size: 15px;
+  }
+  .triplay-tutorial .video-wrapper {
+    padding: 0;
+  }
+  .triplay-tutorial .video-wrapper .embed-video-wrapper {
+    padding: 0 5px;
+  }
+  .triplay-tutorial .video-wrapper .embed-video-wrapper iframe {
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 220px;
   }
 }
 .triplay-checkout-description {

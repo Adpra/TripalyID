@@ -160,3 +160,9 @@ footer.triplay-footer {
         }
     }
 }
+
+@include media-breakpoint-between(md , xl) {
+    .column-company {
+        margin-right: 80px !important;
+    }
+}

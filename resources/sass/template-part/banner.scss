@@ -48,3 +48,26 @@
         }
     }
 }
+
+@include media-breakpoint-between(md , xl) {
+    .triplay-banner {
+        margin-top: 50px;
+        .double-banner {
+            display: flex;
+            flex-direction: row;
+            text-align: -webkit-center;
+            .slick-banner {
+                margin: 15px;
+            }
+            .slick-slide {
+                margin: 10px 7px;
+                img {
+                    max-width: 100%;
+                }
+            }
+            .slick-list {
+                margin: 0 -7px;
+            }
+        }
+    }
+}

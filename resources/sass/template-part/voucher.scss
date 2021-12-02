@@ -107,3 +107,43 @@
         }
     }
 }
+
+@include media-breakpoint-between(md , xl) {
+    .triplay-voucher-list {
+        margin-top: 50px;
+        .heading-voucher {
+
+            h3 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 25px;
+            }
+        }
+        .voucher-list__wrapper {
+            padding: 0;
+            .card-voucher {
+                margin-bottom: 20px;
+                img {
+                    max-width: 100%;
+                    border-radius: 5px 5px 0 0;
+                    max-height: 220px;
+                }
+                .voucher-name {
+                    border-radius: 0 0 10px 10px;
+                    height: 60px;
+                    h2 {
+                        font-size: 20px;
+                        line-height: 1.1;
+                        padding-top: 5px;
+                    }
+                }
+                .button-shop {
+                    padding: 3px 10px;
+                    font-size: 20px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

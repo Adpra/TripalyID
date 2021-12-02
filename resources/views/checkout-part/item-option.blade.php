@@ -6,9 +6,9 @@
             @if ( is_nan($data->price) || $data->price == null )
                 <button class="option-item" onclick="getValueItemButton(this);" value="{{ $data->harga }}">{{ $data->item }}</button>   
             @else 
-            <button class="option-item" onclick="getValueItemButton(this);" value="{{ $data->price }}">{{ $data->item }}</button>  
+                <button class="option-item" onclick="getValueItemButton(this);" value="{{ $data->price }}">{{ $data->item }}</button>  
             @endif 
             @endforeach
         </div>
     </div>
-</section> 
+</section>
