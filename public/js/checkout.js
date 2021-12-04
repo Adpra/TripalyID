@@ -1,5 +1,9 @@
 let autoPayment = document.getElementsByClassName('triplay-auto-payment')[0].style;
 let paymentWrapper = document.getElementsByClassName('triplay-manual-payment')[0].style;
+let tokenForm = document.getElementById('form-token') || null; // id form
+let valPrice = document.getElementById('price');
+let priceGopay = document.getElementById('price-gopay');
+let priceBCA = document.getElementById('price-bca');
 
 const bca = document.getElementsByClassName('bca-payment')[0]
             .addEventListener('click' , ()=> {
@@ -10,6 +14,8 @@ const bca = document.getElementsByClassName('bca-payment')[0]
                      autoPayment.display = "block";
                  }
                  paymentWrapper.display = "none";
+                 tokenForm.action = "/payment/bca"; // Change form action
+                 valPrice.value = priceBCA.innerHTML; // Send Price to form
                  window.location.href = "#triplay-auto-payment";
             }); 
 const gopay = document.getElementsByClassName('gopay-payment')[0]
@@ -21,6 +27,8 @@ const gopay = document.getElementsByClassName('gopay-payment')[0]
                      autoPayment.display = "block";
                  }
                  paymentWrapper.display = "none";
+                 tokenForm.action = "/payment/gopay"; // Change form action
+                 valPrice.value = priceGopay.innerHTML; // Send Price to form
                  window.location.href = "#triplay-auto-payment";
             }); 
 const manualPayment = document.getElementsByClassName('manual-direct')[0]

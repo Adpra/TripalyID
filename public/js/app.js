@@ -5273,6 +5273,11 @@ $('.autoplay').slick({
   autoplaySpeed: 1500,
   arrows: false
 });
+$(document).ready(function () {
+  setTimeout(function () {
+    $(".preloader").fadeOut();
+  }, 4000);
+});
 
 /***/ }),
 

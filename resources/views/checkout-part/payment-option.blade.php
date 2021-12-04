@@ -16,14 +16,14 @@
                 </div>
             </a>
         </div>
-        {{--  --}}
+        {{--  --}} 
         <h3>Pembayaran <span>Otomotis</span></h3>
         <div class="auto-payment">
             <div class="card-payment bca-payment">
                 <img src="{{ asset('img/bca.png') }}">
                 <div class="total-price">
                     <p>Harga :</p>
-                    <span class="price-field">10000</span>
+                    <span class="price-field" id="price-gopay">10000</span>
                 </div>
                 <div class="inc-ppn">
                     <p>Sudah termasuk PPN</p>
@@ -33,7 +33,7 @@
                 <img src="{{ asset('img/gopay.png') }}">
                 <div class="total-price">
                     <p>Harga :</p>
-                    <span class="price-field">10000</span>
+                    <span class="price-field" id="price-bca">10000</span>
                 </div>
                 <div class="inc-ppn">
                     <p>Sudah termasuk PPN</p>

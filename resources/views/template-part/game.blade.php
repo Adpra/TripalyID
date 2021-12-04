@@ -1,6 +1,6 @@
 <section class="triplay-game-list">
     <div class="container">
-        <div class="heading-game">
+        <div class="heading-game" id="game-point">
             <h3>Top Up <span>Game</span></h3>
             <p>Daftar top up games online
                Dijamin 100 % aman dan pengisian cepat </p>

@@ -6,3 +6,8 @@ $('.autoplay').slick({
     arrows: false,
 });
 
+$(document).ready(function(){
+    setTimeout(function(){ 
+        $(".preloader").fadeOut(); 
+      }, 4000 );
+});

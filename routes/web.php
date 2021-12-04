@@ -10,6 +10,7 @@ use App\Http\Controllers\VideoController;
 use App\Http\Controllers\PulseController;
 use App\Http\Controllers\PricePulseController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PaymentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -99,3 +100,7 @@ Route::post('/admin/{pulse}/pricePulse' , [PricePulseController::class , 'store'
 Route::patch('/admin/{pricePulse}/pricePulse' , [PricePulseController::class , 'update']);
 Route::delete('/admin/{pricePulse}/pricePulse' , [PricePulseController::class , 'destroy']);
 
+
+// For payment token
+Route::post('/payment/gopay' , [PaymentController::class , 'tokenPaymentGopay']);
+Route::post('/payment/bca' , [PaymentController::class , 'tokenPaymentBCA']);

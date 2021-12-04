@@ -14,7 +14,6 @@
                     <input type="text" id="server" name="server" placeholder="Server">
                     @endif
                     <input type="text" id="nickname" name="nickname" placeholder="Nickname">
-                    <input type="text" id="number" name="number" placeholder="Nomor Whatsapp">
                     <select name="payment" id="payment">
                         <option value="">BCA</option>
                         <option value="">GOPAY</option>
