@@ -9,3 +9,8 @@ let mobileMenu = document.getElementsByClassName('black-hamburger')[0]
 function slidetogame() {
     window.location.href = "#game-point";
 }
+
+// Button Promo
+function promoDiamond() {
+    alert("Ups, Saat ini belum tersedia promo diamond, Check lagi nanti yaa :))");
+}

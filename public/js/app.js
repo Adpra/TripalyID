@@ -5276,7 +5276,7 @@ $('.autoplay').slick({
 $(document).ready(function () {
   setTimeout(function () {
     $(".preloader").fadeOut();
-  }, 4000);
+  }, 10000);
 });
 
 /***/ }),

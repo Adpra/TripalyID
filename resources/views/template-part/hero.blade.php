@@ -6,7 +6,7 @@
                     Mobile Legend, PUBG, Apex, Freefire, Call Of Duty </p>
                     <div class="hero-button">
                         <button class="button-left" onclick="slidetogame();">Yuk Mulai</button>
-                        <button class="button-right">Promo Diamond</button>
+                        <button class="button-right" onclick="promoDiamond();">Promo Diamond</button>
                     </div>
             </div>
         </div>

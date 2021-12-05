@@ -19,7 +19,9 @@
                     <label for="message">Catatan :</label>
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
                     <input type="hidden" id="price" name="price" value="">
-                    <button type="submit" name="pay" id="pay">Pay</button>
+                    <input type="hidden" id="itemAuto" name="item" value="">
+                    <input type="hidden" id="gameName" name="gameName" value="{{ $dataItem->name }}">
+                    <button type="submit" name="pay" id="pay">Pay</button> 
                 </form>
             </div>
         </div>

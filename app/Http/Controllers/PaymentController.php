@@ -4,15 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
+\Midtrans\Config::$serverKey = 'SB-Mid-server-cM0fuktoTGZL3M_XiL9Jsgxv'; 
+\Midtrans\Config::$isProduction = false;
 
 class PaymentController extends Controller
 {
     public function tokenPaymentGopay(Request $request) {
 
-        \Midtrans\Config::$serverKey = 'SB-Mid-server-cM0fuktoTGZL3M_XiL9Jsgxv'; 
-        \Midtrans\Config::$isProduction = false;
-
-        // Rquest from checkout form 
         $request->name;
         $params = array(
             'transaction_details' => array(
@@ -33,9 +31,6 @@ class PaymentController extends Controller
 
 
     public function tokenPaymentBCA(Request $request) {
-
-        \Midtrans\Config::$serverKey = 'SB-Mid-server-cM0fuktoTGZL3M_XiL9Jsgxv'; 
-        \Midtrans\Config::$isProduction = false;
         
         $params = array(
             'payment_type' => 'bank_transfer',

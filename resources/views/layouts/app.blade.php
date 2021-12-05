@@ -22,11 +22,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Quicksand&display=swap" rel="stylesheet">
   </head>
   <body>  
-    <div class="preloader">
-      <div class="loading">
-        <img src="{{ asset('img/preload.gif') }}" width="200">
-      </div>
-    </div>
     @yield('header')
     @yield('content')
     @yield('footer')
