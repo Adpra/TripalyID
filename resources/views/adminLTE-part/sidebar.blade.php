@@ -37,17 +37,17 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+          // admin Triplay
+          <li class="nav-item menu-is-opening menu-open">
+            <a href="/admin" class="nav-link">
               <p>
                 Admin Triplay
-                <i class="right fas fa-angle-left"></i>
+                <i class="fas fa-angle-left right"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview">
+            <ul class="nav nav-treeview" style="display: block;">
               <li class="nav-item">
-                <a href="/admin/imageslide" class="nav-link active">
+                <a href="/admin/imageslide" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Image Slide</p>
                 </a>
@@ -61,10 +61,9 @@
               <li class="nav-item">
                 <a href="/admin/video" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Video</p>
+                  <p>Videos</p>
                 </a>
               </li>
-            </ul>
               <li class="nav-item">
                 <a href="/admin/pulse" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -73,14 +72,40 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a href="/admin/table" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+          //admin reseller
+          <li class="nav-item menu-is-opening menu-open">
+            <a href="#" class="nav-link">
               <p>
-                Simple Link
-                <span class="right badge badge-danger">New</span>
+                Admin Reseller
+                <i class="fas fa-angle-left right"></i>
               </p>
             </a>
+            <ul class="nav nav-treeview" style="display: block;">
+              <li class="nav-item">
+                <a href="/admin/gamereseller" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Game Reseller</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Image Banner</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Videos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pulsa</p>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
