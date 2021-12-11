@@ -12,6 +12,7 @@ use App\Http\Controllers\PricePulseController;
 use App\Http\Controllers\GameResellerController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PriceResellerController;
+use App\Http\Controllers\ResellerController;
 use App\Http\Controllers\PaymentController;
 
 /*
@@ -107,6 +108,17 @@ Route::delete('/admin/{pricePulse}/pricePulse' , [PricePulseController::class , 
 // For payment token
 Route::post('/payment/gopay' , [PaymentController::class , 'tokenPaymentGopay']);
 Route::post('/payment/bca' , [PaymentController::class , 'tokenPaymentBCA']);
+
+
+
+
+//////////////////////////////////////////////////////// Reseller ////////////////////////////////////////////////////////////////////////////
+
+
+
+
+// Admin Reseller
+Route::get('/reseller' , [ResellerController::class , 'index']);
 
 
 // Game Resller

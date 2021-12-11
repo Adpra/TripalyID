@@ -14,7 +14,7 @@ class ResellerController extends Controller
      */
     public function index()
     {
-        //
+        return view('content-admin-reseller-part/admin-reseller/index');
     }
 
     /**
