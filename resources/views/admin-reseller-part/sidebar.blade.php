@@ -47,7 +47,7 @@
               </a>
               <ul class="nav nav-treeview" style="display: block;">
                 <li class="nav-item">
-                  <a href="" class="nav-link">
+                  <a href="/reseller" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Game Reseller</p>
                   </a>

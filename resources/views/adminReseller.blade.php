@@ -1,6 +1,6 @@
 @extends('admin-reseller-part/header')
 
-@section('title' , 'Admin')
+@section('title' , 'Admin Reseller')
 
 @section('content')
 @include('admin-reseller-part/navbar')

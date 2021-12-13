@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Reseller;
+use App\Models\GameReseller;
 use Illuminate\Http\Request;
 
 class ResellerController extends Controller
@@ -14,7 +15,8 @@ class ResellerController extends Controller
      */
     public function index()
     {
-        return view('content-admin-reseller-part/admin-reseller/index');
+        $gameResellers= GameReseller::all();
+        return view('content-admin-reseller-part/admin-reseller/index',compact('gameResellers'));
     }
 
     /**
@@ -22,9 +24,10 @@ class ResellerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(GameReseller $GameReseller)
     {
-        //
+        
+        return view('content-admin-reseller-part/admin-reseller/gamePrice',compact('GameReseller'));
     }
 
     /**

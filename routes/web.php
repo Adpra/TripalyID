@@ -119,6 +119,7 @@ Route::post('/payment/bca' , [PaymentController::class , 'tokenPaymentBCA']);
 
 // Admin Reseller
 Route::get('/reseller' , [ResellerController::class , 'index']);
+Route::get('/reseller/{GameReseller}/price' , [ResellerController::class , 'create']);
 
 
 // Game Resller
@@ -135,3 +136,6 @@ Route::get('/admin/gamereseller/{GameReseller}/price' , [PriceResellerController
 Route::post('/admin/gamereseller/{PriceReseller}/price' , [PriceResellerController::class , 'store']);
 Route::patch('/admin/gamereseller/{PriceReseller}/price' , [PriceResellerController::class , 'update']);
 Route::delete('/admin/gamereseller/{PriceReseller}/price' , [PriceResellerController::class , 'destroy']);
+
+
+
