@@ -1,7 +1,7 @@
-@extends('layouts/app')
+@extends('layout/app')
 
 @section('header')
-@include('layouts/second-header')
+@include('layout/second-header')
 @endsection
 
 @section('content')
@@ -27,5 +27,5 @@
 @endsection
 
 @section('footer')
-@include('layouts/footer')
+@include('layout/footer')
 @endsection

@@ -48,7 +48,7 @@ Route::get('/checkout/pulsa/{slug}' , [CheckoutController::class , 'pulse']);
 
 
 // Admin Page Route
-Route::get('/admin' , [TriplayController::class , 'index']);
+Route::get('/admin' , [TriplayController::class , 'index'])->name('admin')->middleware('is_admin');
 Route::get('/admin/tambah' , [TriplayController::class , 'create']);
 Route::post('/admin/tambah/data' , [TriplayController::class , 'store']);
 Route::get('/admin/{triplay}/edit' , [TriplayController::class , 'edit']);
@@ -118,7 +118,7 @@ Route::post('/payment/bca' , [PaymentController::class , 'tokenPaymentBCA']);
 
 
 // Admin Reseller
-Route::get('/reseller' , [ResellerController::class , 'index']);
+Route::get('/reseller' , [ResellerController::class , 'index'])->name('reseller');
 Route::get('/reseller/{GameReseller}/price' , [ResellerController::class , 'create']);
 
 
@@ -139,3 +139,15 @@ Route::delete('/admin/gamereseller/{PriceReseller}/price' , [PriceResellerContro
 
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

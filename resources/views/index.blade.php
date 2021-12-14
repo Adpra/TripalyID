@@ -1,9 +1,9 @@
-@extends('layouts/app')
+@extends('layout/app')
 
 @section('title' , 'Triplay')
 
 @section('header')
-@include('layouts/header')
+@include('layout/header')
 @endsection
 
 @section('content')
@@ -19,5 +19,5 @@
 @endsection
 
 @section('footer')
-@include('layouts/footer')
+@include('layout/footer')
 @endsection
