@@ -54,6 +54,8 @@ Route::post('/admin/tambah/data' , [TriplayController::class , 'store']);
 Route::get('/admin/{triplay}/edit' , [TriplayController::class , 'edit']);
 Route::patch('/admin/{triplay}' , [TriplayController::class , 'update']);
 Route::delete('/admin/{triplay}' , [TriplayController::class , 'destroy']);
+Route::get('/admin/status' , [TriplayController::class , 'show']);
+
 
 
 // Triplay Price
@@ -122,6 +124,8 @@ Route::get('/reseller' , [ResellerController::class , 'index'])->name('reseller'
 Route::get('/reseller/{GameReseller}/price' , [ResellerController::class , 'create']);
 Route::post('/notification' , [ResellerController::class , 'store']);
 Route::get('/reseller/status' , [ResellerController::class , 'show']);
+Route::get('/admin/permission' , [ResellerController::class , 'edit']);
+Route::patch('/admin/permission/{notification}' , [ResellerController::class , 'update']);
 
 
 // Game Resller

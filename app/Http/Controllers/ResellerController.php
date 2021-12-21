@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Reseller;
 use App\Models\GameReseller;
 use App\Models\Notification;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class ResellerController extends Controller
 {
@@ -70,8 +72,8 @@ class ResellerController extends Controller
      */
     public function show()
     {
-      $notifications = Notification::all();
-        return view('content-admin-reseller-part/admin-reseller/status',compact('notifications'));
+
+        return view('content-admin-reseller-part/admin-reseller/status',);
     }
 
     /**
@@ -80,9 +82,10 @@ class ResellerController extends Controller
      * @param  \App\Models\Reseller  $reseller
      * @return \Illuminate\Http\Response
      */
-    public function edit(Reseller $reseller)
+    public function edit()
     {
-        //
+        $notification = Notification::all();
+        return view('content-admin-reseller-part/admin-reseller/permission',compact('notification'));
     }
 
     /**
@@ -92,9 +95,20 @@ class ResellerController extends Controller
      * @param  \App\Models\Reseller  $reseller
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Reseller $reseller)
+    public function update(Request $request, Notification $notification)
     {
-        //
+        Notification::where('id', $notification->id)
+        ->update([
+            'nameId' => $request->nameId,
+            'name' => $request->name,
+            'price' => $request->price,
+            'item' => $request->item,
+            'description' => $request->description,
+            'status' => $request->status,
+
+
+        ]);
+        return Redirect::back()->with('status', 'Data Berhasil Di Di Ubah');
     }
 
     /**

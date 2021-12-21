@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
-
+use App\Models\Notification;
 class TriplayController extends Controller
 {
 
@@ -83,7 +83,8 @@ class TriplayController extends Controller
      */
     public function show(Triplay $triplay)
     {
-        //
+        $notifications = Notification::all();
+        return view('content-admin-reseller-part/triplay-status/status',compact('notifications'));
     }
 
     /**

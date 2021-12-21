@@ -1,4 +1,4 @@
-@extends('adminReseller')
+@extends('adminLTE')
 
 @section('content-admin')
 <table class="table">
@@ -16,7 +16,7 @@
       </tr>
     </thead>
     <tbody>
-        @foreach (Auth::user()->notification as $triplay)
+        @foreach ($notifications as $triplay)
         <tr>
           <th scope="row">{{$loop->iteration}}</th>
           <td>{{$triplay->user_id}}</td>
@@ -25,7 +25,7 @@
           <td>Rp. {{$triplay->price}}</td>
           <td>{{$triplay->item}}</td>
           <td>{{$triplay->description}}</td>
-          <td></td>
+          <td>{{$triplay->updated_at}}</td>
           <td>{{$triplay->status}}</td>
 
         </tr>

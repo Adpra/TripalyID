@@ -91,21 +91,15 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="/admin/status" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Image Banner</p>
+                  <p>Status</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="/admin/permission" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Videos</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Pulsa</p>
+                  <p>Permission</p>
                 </a>
               </li>
             </ul>
