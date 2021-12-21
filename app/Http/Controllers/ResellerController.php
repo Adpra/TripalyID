@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Reseller;
 use App\Models\GameReseller;
+use App\Models\Notification;
 use Illuminate\Http\Request;
 
 class ResellerController extends Controller
@@ -36,7 +37,7 @@ class ResellerController extends Controller
      */
     public function create(GameReseller $GameReseller)
     {
-        
+
         return view('content-admin-reseller-part/admin-reseller/gamePrice',compact('GameReseller'));
     }
 
@@ -48,7 +49,17 @@ class ResellerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Notification::insert([
+            'user_id' => $request->get('user_id'),
+            'nameId' => $request->get('nameId'),
+            'name' => $request->get('name'),
+            'price' => $request->get('price'),
+            'item' => $request->get('item'),
+            'status' => $request->get('status'),
+            'description' => $request->get('description')
+        ]);
+
+        return redirect('/reseller/status');
     }
 
     /**
@@ -57,9 +68,10 @@ class ResellerController extends Controller
      * @param  \App\Models\Reseller  $reseller
      * @return \Illuminate\Http\Response
      */
-    public function show(Reseller $reseller)
+    public function show()
     {
-        //
+      $notifications = Notification::all();
+        return view('content-admin-reseller-part/admin-reseller/status',compact('notifications'));
     }
 
     /**

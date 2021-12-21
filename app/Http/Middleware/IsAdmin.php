@@ -16,8 +16,14 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next)
     {
+
+
+
         if(auth()->user()->is_admin == 1){
             return $next($request);
+            return redirect('/admin');
+        }else if(auth()->user()->is_admin == 0){
+            return redirect('/reseller');
         }
         return redirect('/login')->whith('error', 'Anda Tidak Dapat Mengakses Halaman Ini');
     }

@@ -23,12 +23,20 @@ class CreateUserSeeder extends Seeder
                 'password' => bcrypt('123456'),
 
             ],
-            
+
             [
                 'name' => 'User',
                 'email' => 'user@gmail.com',
                 'is_admin' => '0',
                 'saldo' => '800000',
+                'password' => bcrypt('123456'),
+
+            ],
+            [
+                'name' => 'Joko',
+                'email' => 'joko@gmail.com',
+                'is_admin' => '0',
+                'saldo' => '500000',
                 'password' => bcrypt('123456'),
 
             ],

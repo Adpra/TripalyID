@@ -120,6 +120,8 @@ Route::post('/payment/bca' , [PaymentController::class , 'tokenPaymentBCA']);
 // Admin Reseller
 Route::get('/reseller' , [ResellerController::class , 'index'])->name('reseller');
 Route::get('/reseller/{GameReseller}/price' , [ResellerController::class , 'create']);
+Route::post('/notification' , [ResellerController::class , 'store']);
+Route::get('/reseller/status' , [ResellerController::class , 'show']);
 
 
 // Game Resller

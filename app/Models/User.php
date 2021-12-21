@@ -23,6 +23,7 @@ class User extends Authenticatable
         'is_admin',
         'saldo',
         'password',
+        'rofile_picture'
     ];
 
     /**

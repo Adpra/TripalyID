@@ -16,7 +16,10 @@
           <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">{{ Auth::user()->name }}</a>
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">{{ Auth::user()->saldo }}</a>
         </div>
       </div>
 
@@ -37,7 +40,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          // admin Triplay
+          {{--  admin Triplay  --}}
           <li class="nav-item menu-is-opening menu-open">
             <a href="/admin" class="nav-link">
               <p>
@@ -72,7 +75,7 @@
               </li>
             </ul>
           </li>
-          //admin reseller
+          {{--  admin reseller  --}}
           <li class="nav-item menu-is-opening menu-open">
             <a href="#" class="nav-link">
               <p>
