@@ -26,6 +26,9 @@ use App\Http\Controllers\PaymentController;
 |
 */
 
+
+
+
 //  General Route
 Route::get('/login/partner', function () {
     return view('/login-partner');

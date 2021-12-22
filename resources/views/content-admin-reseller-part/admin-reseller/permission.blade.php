@@ -31,6 +31,7 @@
             <input type="hidden" value="{{$triplay->name}}" name="name">
             <input type="hidden" value="{{$triplay->price}}" name="price">
             <input type="hidden" value="{{$triplay->item}}" name="item">
+
             <input type="hidden" value="" name="status" id="status">
 
 

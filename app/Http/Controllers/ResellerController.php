@@ -7,6 +7,7 @@ use App\Models\GameReseller;
 use App\Models\Notification;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 
 class ResellerController extends Controller
@@ -58,7 +59,8 @@ class ResellerController extends Controller
             'price' => $request->get('price'),
             'item' => $request->get('item'),
             'status' => $request->get('status'),
-            'description' => $request->get('description')
+            'description' => $request->get('description'),
+
         ]);
 
         return redirect('/reseller/status');
@@ -73,7 +75,8 @@ class ResellerController extends Controller
     public function show()
     {
 
-        return view('content-admin-reseller-part/admin-reseller/status',);
+        $users = Notification::where('user_id', auth()->user()->id)->orderBy('updated_at', 'desc')->get();
+        return view('content-admin-reseller-part/admin-reseller/status', compact('users'));
     }
 
     /**

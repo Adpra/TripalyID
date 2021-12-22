@@ -75,6 +75,12 @@
               </li>
             </ul>
           </li>
+
+
+          <?php
+          use App\Models\Notification;
+
+          ?>
           {{--  admin reseller  --}}
           <li class="nav-item menu-is-opening menu-open">
             <a href="#" class="nav-link">
@@ -97,9 +103,17 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/admin/permission" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Permission</p>
+                <a href="/admin/permission" class="nav-link ">
+                    <i class="far fa-bell nav-icon"></i>
+                  <p>
+                    Permission
+                    @if (Notification::where('status','Belum Di Proses')->count() == 0)
+
+                    @else
+                    <span class="badge badge-danger right">{{Notification::where('status','Belum Di Proses')->count()}}</span>
+
+                    @endif
+                  </p>
                 </a>
               </li>
             </ul>

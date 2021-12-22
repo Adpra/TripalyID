@@ -43,64 +43,52 @@
         </div>
       </li>
 
+
+      {{--  <?php
+      use App\Models\Notification;
+      $users = Notification::where('user_id', auth()->user()->id)->orderBy('created_at', 'desc')->get();
+      ?>
+
       <!-- Messages Dropdown Menu -->
       <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-            <i class="far fa-bell"></i>
-          <span class="badge badge-danger navbar-badge">3</span>
-        </a>
+          <a class="nav-link" data-toggle="dropdown" href="#">
+              <i class="far fa-bell"></i>
+            @foreach ( $users as $user )
+
+                    <span class="badge badge-danger navbar-badge">{{Notification::where('status','Belum Di Proses')->count()}}</span>
+            @endforeach
+          </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Brad Diesel
-                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">Call me whenever you can...</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
+            @foreach ($users as $user)
+
+            @if ($user->status == 'Sudah Di Proses' || $user->status == 'Gagal')
+
+            @else
+            <a href="/admin/permission" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                     {{$user->nameId}}
+                      <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                    </h3>
+                    <p class="text-sm">{{$user->name}}</p>
+                    <p class="text-sm">{{$user->status}}</p>
+                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> {{$user->created_at}}</p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+            @endif
+
+            <div class="dropdown-divider"></div>
+          @endforeach
+
           <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  John Pierce
-                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">I got your message bro</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Nora Silvester
-                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">The subject goes here</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+          <a href="/admin/permission" class="dropdown-item dropdown-footer">See All Messages</a>
         </div>
-      </li>
+      </li>  --}}
 
 
       <li class="nav-item">

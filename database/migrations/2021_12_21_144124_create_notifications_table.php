@@ -23,7 +23,8 @@ class CreateNotificationsTable extends Migration
             $table->string('status');
             $table->string('description')->nullable();
             $table->unsignedBigInteger('user_id')->nullable();
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
 
 

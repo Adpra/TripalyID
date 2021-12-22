@@ -83,7 +83,7 @@ class TriplayController extends Controller
      */
     public function show(Triplay $triplay)
     {
-        $notifications = Notification::all();
+        $notifications = Notification::orderBy('updated_at', 'desc')->get();
         return view('content-admin-reseller-part/triplay-status/status',compact('notifications'));
     }
 
