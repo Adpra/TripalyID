@@ -19,9 +19,21 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->boolean('is_admin')->nullable();
+            $table->string('saldo');
+            $table->string('profile_picture')->nullable();
+            // $table->unsignedBigInteger('trigger_id')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
+
+        // Schema::table('users', function(Blueprint $table){
+        //     $table->foreign('trigger_id')
+        //           ->references('id')
+        //           ->on('triggers')
+        //           ->onDelete('cascade')
+        //           ->onUpdate('cascade');
+        // });
     }
 
     /**

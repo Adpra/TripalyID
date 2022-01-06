@@ -1,9 +1,9 @@
-@extends('layouts/app')
+@extends('layout/app')
 @section('title' , 'Checkout')
 
 
 @section('header')
-    @include('layouts.second-header')  
+    @include('layout.second-header')  
 @endsection
 
 
@@ -17,5 +17,5 @@
 @endsection
 
 @section('footer')
-    @include('layouts.footer')
+    @include('layout.footer')
 @endsection

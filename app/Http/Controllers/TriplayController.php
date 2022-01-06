@@ -7,9 +7,21 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
-
+use App\Models\Notification;
 class TriplayController extends Controller
 {
+
+     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -71,7 +83,8 @@ class TriplayController extends Controller
      */
     public function show(Triplay $triplay)
     {
-        //
+        $notifications = Notification::orderBy('updated_at', 'desc')->get();
+        return view('content-admin-reseller-part/triplay-status/status',compact('notifications'));
     }
 
     /**
