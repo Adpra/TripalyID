@@ -9,5 +9,5 @@ $('.autoplay').slick({
 $(document).ready(function(){
     setTimeout(function(){ 
         $(".preloader").fadeOut(); 
-      }, 10000);
+      }, 10);
 });

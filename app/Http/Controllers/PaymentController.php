@@ -25,7 +25,6 @@ class PaymentController extends Controller
         );
         $response = \Midtrans\CoreApi::charge($params);
         $redirectLinkGopay = $response->actions[1]->url;;
-        dd($request);
         return Redirect::to($redirectLinkGopay);
     }
 
